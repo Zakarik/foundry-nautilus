@@ -1,0 +1,8 @@
+<div class="tab vmsan" data-group="primary" data-tab="vmsan">
+    {{#if (isEqual data.type 'heritier')}}
+        {{> systems/nautilus/templates/parts/tabs/partial/vm.html }}
+        {{else}}
+        {{> systems/nautilus/templates/parts/tabs/partial/psan.html }}
+    {{/if}}
+    {{> systems/nautilus/templates/parts/tabs/partial/san.html }}
+</div>

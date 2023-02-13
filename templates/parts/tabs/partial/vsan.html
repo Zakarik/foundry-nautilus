@@ -1,0 +1,31 @@
+<div class="nsan">
+    <h1>
+        <span>{{localize "NAUTILUS.PERSONNAGE.SANTE.Label"}}</span>
+    </h1>
+    <div class="mainBlock">
+        <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+        <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+        <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+        <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+        <span class="header">{{localize "NAUTILUS.VAISSEAUX.SANTE.HEADER.Niveaux"}}</span>
+        <span class="header lBorder">{{localize "NAUTILUS.VAISSEAUX.SANTE.HEADER.Etat"}}</span>
+        <span class="header lBorder">{{localize "NAUTILUS.VAISSEAUX.SANTE.HEADER.Consequences"}}</span>
+
+        {{#each systemData.sante.list as |key san|}}
+            <span class="tBorder">{{key.label}}</span>
+            <span class="border sanCheck" data-key="{{san}}">{{#if (sanCheck @root/systemData/sante/value san)}}X{{/if}}</span>
+            <div class="textarea">
+                <textarea name="system.sante.list.{{san}}.notes">{{key.notes}}</textarea>
+                <select name="system.sante.list.{{san}}.malus" class="santemalus" data-key="{{san}}">
+                    {{#select key.malus}}
+                        <option value="false">{{localize "NAUTILUS.VAISSEAUX.SANTE.NotMalus"}}</option>
+                        <option value="1">{{localize "NAUTILUS.VAISSEAUX.SANTE.HasMalus"}}</option>
+                        <option value="2">{{localize "NAUTILUS.VAISSEAUX.SANTE.HasMalus2"}}</option>
+                    {{/select}}
+                </select>
+            </div>
+
+        {{/each}}
+    </div>
+</div>

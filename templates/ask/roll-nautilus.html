@@ -1,0 +1,22 @@
+<div class="nautilus {{cssClass}}">
+    <label class="mod">
+        <span>{{localize "NAUTILUS.ROLL.ASK.Modificateur"}} :</span>
+        <input type="number" class="mod" value="0" />
+    </label>
+    {{#if specialite}}
+        <div class="blockSpe">
+            <h1>{{localize "NAUTILUS.ROLL.ASK.SpecialiteUtilisee"}}</h1>
+            {{{specialite}}}
+        </div>
+    {{/if}}
+    {{#if vm}}
+    <h1>{{localize "NAUTILUS.ROLL.ASK.VMUtilisee"}}</h1>
+    <h1>{{localize "NAUTILUS.ROLL.ASK.HeritierConcerne"}}</h1>
+    <select class="uvm">
+        {{{vm}}}
+    </select>
+    <select class="heritier">
+        {{{heritiers}}}
+    </select>
+    {{/if}}
+</div>

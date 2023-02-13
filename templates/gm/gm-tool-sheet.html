@@ -1,0 +1,27 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <select name="object.pression" class="pression p{{object.pression}}">
+        {{#select object.pression}}
+        <option value="0">{{localize "NAUTILUS.PRESSION.Label"}} : {{localize "NAUTILUS.PRESSION.Facile"}}</option>
+        <option value="5">{{localize "NAUTILUS.PRESSION.Label"}} : {{localize "NAUTILUS.PRESSION.Nulle"}}</option>
+        <option value="6">{{localize "NAUTILUS.PRESSION.Label"}} : {{localize "NAUTILUS.PRESSION.Legere"}}</option>
+        <option value="7">{{localize "NAUTILUS.PRESSION.Label"}} : {{localize "NAUTILUS.PRESSION.Importante"}}</option>
+        <option value="8">{{localize "NAUTILUS.PRESSION.Label"}} : {{localize "NAUTILUS.PRESSION.Critique"}}</option>
+        <option value="11">{{localize "NAUTILUS.PRESSION.Label"}} : {{localize "NAUTILUS.PRESSION.Abyssale"}}</option>
+        {{/select}}
+    </select>
+    <div>
+        <span>Valeure Morale Commune</span>
+        <i class="fa-solid {{#unless object.vmcunlock}}fa-lock-open{{else}}fa-lock{{/unless}}"></i>
+    </div>
+
+    <select name="object.vmc" class="vmc" {{#unless object.vmcunlock}}disabled{{/unless}}>
+        {{#select object.vmc}}
+            <option value=""></option>
+            <option value="liberte">{{localize "NAUTILUS.PERSONNAGE.VALEURSMORALES.Liberte"}}</option>
+            <option value="verite">{{localize "NAUTILUS.PERSONNAGE.VALEURSMORALES.Verite"}}</option>
+            <option value="justice">{{localize "NAUTILUS.PERSONNAGE.VALEURSMORALES.Justice"}}</option>
+            <option value="pacifisme">{{localize "NAUTILUS.PERSONNAGE.VALEURSMORALES.Pacifisme"}}</option>
+            <option value="progres">{{localize "NAUTILUS.PERSONNAGE.VALEURSMORALES.Progres"}}</option>
+        {{/select}}
+    </select>
+</form>

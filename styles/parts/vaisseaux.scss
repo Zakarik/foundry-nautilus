@@ -1,0 +1,145 @@
+.nautilus.vaisseaux {
+    font-family: "Segoe Ui", Arial;
+    min-width:850px;
+
+    section.window-content {
+        background:$fond;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+
+    nav.tabs {
+        border:none;
+
+        a {
+            border: thick double $colorFond;
+            background: $white;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 5px 10px;
+
+            &.active {
+                text-shadow:none;
+                background:$fondH;
+            }
+        }
+    }
+
+    h1.charname {
+        @include title;
+        margin-bottom: -30px;
+        position: relative;
+        border: 0px;
+
+        input {
+            width: 100%;
+            margin: 0px;
+            padding: 10px 0px 0px;
+            text-align: center;
+            border-radius: 0px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            background: transparent;
+            height: 45px;
+            font-weight: bold;
+        }
+    }
+
+    img.profile-img {
+        width:100%;
+        height:250px;
+        background:$white;
+        object-fit: contain;
+    }
+
+    div {
+        @import "tabs/aptsan";
+        @import "tabs/equipage";
+        @import "tabs/armement";
+        @import "tabs/ameava";
+        @import "tabs/voyage";
+        @import "tabs/description";
+        @import "tabs/options";
+
+        &.pression {
+            width:250px;
+            background:$pressionGreen;
+            text-align: center;
+            font-weight: bold;
+            font-variant: small-caps;
+            line-height: 30px;
+            border:1px solid $black;
+            margin-top: -36px;
+            position: relative;
+            z-index: 999;
+
+            &.p0 {
+                background:$pressionGrey;
+            }
+
+            &.p5 {
+                background:$pressionGreen;
+            }
+
+            &.p6 {
+                background:$pressionYellow;
+            }
+
+            &.p7 {
+                background:$pressionOrange;
+            }
+
+            &.p8 {
+                background:$pressionRed;
+            }
+
+            &.p11 {
+                background:$pressionPurple;
+            }
+        }
+
+        &.difficulte {
+            width:max-content;
+            background:$fondH;
+            display:grid;
+            grid-gap:5px;
+            grid-auto-columns: 1fr 1fr;
+
+            text-align: left;
+            font-weight: bold;
+            font-variant: small-caps;
+            line-height: 30px;
+            border:1px solid $black;
+
+            padding-right:5px;
+            padding-left:5px;
+
+            margin-top: -36px;
+            position: relative;
+            z-index: 999
+
+            span {
+                display:inline-block;
+                grid-column: 1;
+                width:100%;
+                white-space: nowrap;
+            }
+
+            input {
+                grid-column: 2;
+                width:100%;
+                text-align: center;
+                border-radius: 0px;
+                border-width: 0px 0px 2px 0px;
+                border-style: solid;
+                border-color: RGB(117, 76, 40);
+                background: transparent;
+                margin: 0px;
+                padding: 0px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

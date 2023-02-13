@@ -1,0 +1,223 @@
+{
+  "ACTOR":{
+    "TypeHeritier":"Héritier",
+    "TypeEquipage":"Équipage",
+    "TypePersonnage":"Personnage",
+    "TypeVaisseaux":"Vaisseaux"
+  },
+  "ITEM":{
+    "TypeDistance":"Arme à distance",
+    "TypeMelee":"Arme de mêlée",
+    "TypeEquipement":"Equipement",
+    "TypeAmelioration":"Amélioration du Nautilus",
+    "TypeAvarie":"Avarie du Nautilus",
+    "TypeArmement":"Armement de Vaisseaux"
+  },
+  "NAUTILUS":{
+    "Actualiser":"Actualiser",
+    "VAISSEAUX":{
+      "SEMAINES":{
+        "Label":"Semaines en mer"
+      },
+      "APTITUDES":{
+        "Label":"Aptitudes et Santé",
+        "Manoeuvre":"Manoeuvre",
+        "Maniabilite":"Maniabilité",
+        "Plonger":"Plonger/Faire surface",
+        "Endurance":"Endurance",
+        "Chasse":"Chasse",
+        "Coque":"Coque",
+        "Puissance":"Puissance",
+        "Eperonnage":"Éperonnage",
+        "Detection":"Detection",
+        "Fanal":"Fanal"
+      },
+      "EQUIPAGE":{
+        "Label":"Équipage",
+        "Heritiers":"Heritiers"
+      },
+      "ARMEMENT":{
+        "Label":"Armement",
+        "Degats":"Dégâts"
+      },
+      "SANTE":{
+        "Label":"Santé",
+        "Setting":"Paramètres de santé",
+        "Paliers":"Nombre de paliers de santé",
+        "NotMalus":"N'inflige pas de malus",
+        "HasMalus":"Inflige un malus (-1D)",
+        "HasMalus2":"Inflige un malus (-2D)",
+        "HEADER":{
+          "Niveaux":"Niveaux",
+          "Etat":"Etat",
+          "Consequences":"Conséquences et temps de réparation"
+        },
+        "NIVEAUX":{
+          "0ou-":"0 ou -"
+        }
+      },
+      "AMEAVA":{
+        "Label":"Améliorations et Avaries",
+        "Ameliorations":"Améliorations",
+        "Avaries":"Avaries"
+      },
+      "VOYAGE":{
+        "Label":"Voyages",
+        "Quarts":"Quarts des équipes",
+        "Lieux":"Lieux visités",
+        "Creatures":"Créatures rencontrées"
+      },
+      "DESCRIPTION":{
+        "Label":"Description"
+      },
+      "OPTIONS":{
+        "Label":"Options",
+        "Isnautilus":"Ce vaisseau est le Nautilus"
+      }
+    },
+    "PERSONNAGE":{
+      "Nom":"Nom",
+      "Concept":"Concept",
+      "Rupture":"Rupture",
+      "Occupation":"Occupation",
+      "Heritage":"Héritage",
+      "Role":"Rôle à bord",
+      "LienEquipage":"Lien équipage",
+      "LienHeritier":"Lien héritier",
+      "VmSan":"Valeurs Morales & Santé",
+      "Description":"Description",
+      "APTITUDES":{
+        "Label":"Aptitudes",
+        "AptitudesSpecialites":"Aptitudes & Spécialités",
+        "Specialites":"Spécialités",
+        "Relance-short":"R",
+        "Agir":"Agir",
+        "Connaitre":"Connaître",
+        "Endurer":"Endurer",
+        "Forcer":"Forcer",
+        "Percevoir":"Percevoir",
+        "SImposer":"S'imposer",
+        "SavoirFaire":"Savoir-Faire",
+        "SeBattre":"Se battre",
+        "SeControler":"Se contrôler",
+        "Viser":"Viser"
+      },
+      "VALEURSMORALES":{
+        "Label":"Valeurs morales",
+        "ShortUse":"Valeur utilisée",
+        "Commune":"Commune",
+        "CommuneUse":"Valeur commune utilisée",
+        "Liberte":"Liberté",
+        "Verite":"Vérité",
+        "Justice":"Justice",
+        "Pacifisme":"Pacifisme",
+        "Progres":"Progrès"
+      },
+      "SANTE":{
+        "Label":"Santé",
+        "Setting":"Paramètres de santé",
+        "Paliers":"Nombre de paliers de santé",
+        "HEADER":{
+          "Niveaux":"Niveaux",
+          "Etat":"Etat",
+          "Consequences":"Conséquences",
+          "Recup":"Récup",
+          "Notes":"Notes"
+        },
+        "NIVEAUX":{
+          "0ou-":"0 ou -"
+        },
+        "CONSEQUENCES":{
+          "PleineForme":"Pleine forme",
+          "Fatigue":"Fatigué",
+          "Epuise":"Épuisé",
+          "Blesse":"Blessé (-1D)",
+          "BlesseGravement":"Blessé Gravement (Pression +1)",
+          "EtatCritique":"État critique",
+          "Terrasse":"Terrassé"
+        },
+        "RECUPERATION":{
+          "6H":"6H",
+          "12H":"12H",
+          "24H":"24H",
+          "48H":"48H",
+          "Special":"Spécial"
+        }
+      },
+      "BONUS":{
+        "Sante":"Bonus santé",
+        "Contact":"Bonus au contact"
+      },
+      "EQUIPEMENT":{
+        "Label":"Équipement",
+        "Degats":"Dégâts",
+        "EditEquipement":"Editer Equipement",
+        "DeleteEquipement":"Supprimer Equipement",
+        "EditWpn":"Editer Arme",
+        "DeleteWpn":"Supprimer Arme",
+        "MELEE":{
+          "Label":"Arme de mêlée"
+        },
+        "DISTANCE":{
+          "Label":"Armes à distance"
+        }
+      },
+      "HISTORIQUE":{
+        "Label":"Historique",
+        "Contact":"Contact"
+      }
+    },
+    "PRESSION":{
+      "Label":"Pression",
+      "Facile":"Facile",
+      "Nulle":"Nulle",
+      "Legere":"Légère",
+      "Importante":"Importante",
+      "Critique":"Critique",
+      "Abyssale":"Abyssale"
+    },
+    "ROLL":{
+      "ASK":{
+        "LabelMS":"Modificateur & Spécialite",
+        "Modificateur":"Modificateur",
+        "SpecialiteUtilisee":"Spécialité utilisée ?",
+        "VMUtilisee":"Utilisation de valeure morale ?",
+        "HeritierConcerne":"Héritier concerné",
+        "Roll":"Jet !",
+        "Cancel":"Annuler",
+        "Aucune":"Aucune"
+      },
+      "Reussites":"Réussites",
+      "Reussite":"Réussite",
+      "Abandonne":"Abandonné",
+      "Specialite":"Spécialité",
+      "Base":"Base",
+      "ReussiteExceptionnelle":"Réussite exceptionnelle",
+      "ReussiteTotale":"Réussite totale",
+      "ReussitePartielle":"Réussite partielle",
+      "Echec":"Échec",
+      "EchecRetentissant":"Échec retentissant",
+      "EchecCatastrophique":"Échec catastrophique",
+      "VMEpuisee":"Valeure morale épuisée"
+    },
+    "TOOL":{
+      "MJ":"Outils de MJ"
+    },
+    "BONUS":{
+      "ROLL":{
+        "Label":"Bonus aux jets",
+        "Bonus":"Dé(s) bonus",
+        "Aptitude":"À l'aptitude",
+        "Specialite":"À la spécialité"
+      },
+      "DISTANCE":{
+        "Label":"Ajout d'une arme à distance",
+        "Degats":"Dégâts de l'arme"
+      },
+      "SANTE":{
+        "Label":"Bonus aux niveaux de santés",
+        "Simple":"Bonus"
+      }
+    }
+  }
+}

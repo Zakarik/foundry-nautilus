@@ -1,0 +1,56 @@
+<div class="vm">
+    <h1>
+        <span>{{localize "NAUTILUS.PERSONNAGE.VALEURSMORALES.Label"}}</span>
+    </h1>
+    <div class="mainBlock">
+        <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+        <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+        <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+        <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+        <div class="vmBlock vmLiberte">
+            <div>
+                <input type="number" name="system.valeursmorales.liberte.value" value="{{systemData.valeursmorales.liberte.value}}" min="0" max="{{systemData.valeursmorales.liberte.max}}" />
+                <span>/</span>
+                <input type="number" name="system.valeursmorales.liberte.max" value="{{systemData.valeursmorales.liberte.max}}" min="0" />
+            </div>
+            <span class="label {{#if (isEqual systemData.valeursmorales.commune 'liberte')}}lvmc{{/if}}">{{localize "NAUTILUS.PERSONNAGE.VALEURSMORALES.Liberte"}}</span>
+        </div>
+        <div class="vmBlock vmVerite">
+            <div>
+                <input type="number" name="system.valeursmorales.verite.value" value="{{systemData.valeursmorales.verite.value}}" min="0" max="{{systemData.valeursmorales.verite.max}}" />
+                <span>/</span>
+                <input type="number" name="system.valeursmorales.verite.max" value="{{systemData.valeursmorales.verite.max}}" min="0" />
+            </div>
+
+            <span class="label {{#if (isEqual systemData.valeursmorales.commune 'verite')}}lvmc{{/if}}">{{localize "NAUTILUS.PERSONNAGE.VALEURSMORALES.Verite"}}</span>
+        </div>
+        <div class="vmBlock vmJustice">
+            <div>
+                <input type="number" name="system.valeursmorales.justice.value" value="{{systemData.valeursmorales.justice.value}}" min="0" max="{{systemData.valeursmorales.justice.max}}" />
+                <span>/</span>
+                <input type="number" name="system.valeursmorales.justice.max" value="{{systemData.valeursmorales.justice.max}}" min="0" />
+            </div>
+
+            <span class="label {{#if (isEqual systemData.valeursmorales.commune 'justice')}}lvmc{{/if}}">{{localize "NAUTILUS.PERSONNAGE.VALEURSMORALES.Justice"}}</span>
+        </div>
+
+        <div class="vmBlock vmPacifisme">
+            <div>
+                <input type="number" name="system.valeursmorales.pacifisme.value" value="{{systemData.valeursmorales.pacifisme.value}}" min="0" max="{{systemData.valeursmorales.pacifisme.max}}" />
+                <span>/</span>
+                <input type="number" name="system.valeursmorales.pacifisme.max" value="{{systemData.valeursmorales.pacifisme.max}}" min="0" />
+            </div>
+            <span class="label {{#if (isEqual systemData.valeursmorales.commune 'pacifisme')}}lvmc{{/if}}">{{localize "NAUTILUS.PERSONNAGE.VALEURSMORALES.Pacifisme"}}</span>
+        </div>
+        <div class="vmBlock vmProgres">
+            <div>
+                <input type="number" name="system.valeursmorales.progres.value" value="{{systemData.valeursmorales.progres.value}}" min="0" max="{{systemData.valeursmorales.progres.max}}" />
+                <span>/</span>
+                <input type="number" name="system.valeursmorales.progres.max" value="{{systemData.valeursmorales.progres.max}}" min="0" />
+            </div>
+
+            <span class="label {{#if (isEqual systemData.valeursmorales.commune 'progres')}}lvmc{{/if}}">{{localize "NAUTILUS.PERSONNAGE.VALEURSMORALES.Progres"}}</span>
+        </div>
+    </div>
+</div>

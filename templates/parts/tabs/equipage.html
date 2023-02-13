@@ -1,0 +1,41 @@
+<div class="tab equipage" data-group="primary" data-tab="equipage">
+    <div class="heritiers">
+        <h1>
+            <span>{{localize "NAUTILUS.VAISSEAUX.EQUIPAGE.Heritiers"}}</span>
+        </h1>
+        <div class="mainBlock">
+            <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+            <div class="subBlock">
+                {{#each actor.equipage.heritiers as |key heritier|}}
+                    <span class="nom">{{key.name}}</span>
+                    <span class="role">{{key.role}}</span>
+                {{/each}}
+                <div class="actualiser"><span class="actualiser">{{localize "NAUTILUS.Actualiser"}}</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="equipage">
+        <h1>
+            <span>{{localize "ACTOR.TypeEquipage"}}</span>
+        </h1>
+        <div class="mainBlock">
+            <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+            <div class="subBlock">
+                {{#each actor.equipage.equipage as |key heritier|}}
+                    <span class="nom">{{key.name}}</span>
+                    <span class="role">{{key.role}}</span>
+                {{/each}}
+                <div class="actualiser"><span class="actualiser">{{localize "NAUTILUS.Actualiser"}}</span></div>
+            </div>
+        </div>
+    </div>
+</div>

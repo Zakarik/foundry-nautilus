@@ -1,0 +1,194 @@
+&.aptitudes.active {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:5px;
+
+    div {
+        &.apt {
+            grid-column: 1 / 3;
+            text-align: center;
+            grid-gap:5px;
+
+            h1 {
+                @include title;
+                display:inline-block;
+                position: relative;
+                border:0px;
+
+                span {
+                    display:block;
+                    width: 100%;
+                    margin: 0px;
+                    padding: 12px 0px 0px;
+                    text-align: center;
+                    border-radius: 0px;
+                    border-top: 0px;
+                    border-left: 0px;
+                    border-right: 0px;
+                    background: transparent;
+                    font-weight:bold;
+                    font-size:22px;
+                    font-variant: small-caps;
+                }
+            }
+
+            div {
+                &.mainBlock {
+                    div {
+                        &.main {
+                            display:grid;
+                            grid-template-columns:1fr 60px;
+                            line-height: 30px;
+                            z-index:99;
+
+                            span {
+                                grid-column:1;
+                                font-variant: small-caps;
+                                cursor:pointer;
+
+                                &:hover {
+                                    font-weight:bold;
+                                }
+                            }
+
+                            label {
+                                grid-column: 2;
+                                background: URL("../assets/compteur.png");
+                                background-size: 56px 26px;
+                                height: 30px;
+                                background-repeat: no-repeat;
+                                background-position: bottom;
+
+                                input {
+                                    width: 100%;
+                                    text-align: center;
+                                    border: 0px;
+                                    background: transparent;
+                                    padding-bottom: 5px;
+                                    font-weight: bold;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                        &.add {
+                            width: max-content;
+                            font-variant: small-caps;
+                            margin-left:auto;
+                            cursor:pointer;
+
+                            &:hover {
+                                font-weight:bold;
+                            }
+                        }
+
+                        &.sub {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-gap: 5px;
+
+                            div {
+                                display:flex;
+                                position:relative;
+                                justify-content: space-between;
+                                align-items:flex-end;
+                                flex-wrap: wrap;
+                                width:100%;
+
+                                i.deleteSpecialite {
+                                    position:absolute;
+                                    right:0px;
+                                    top: 10px;
+                                    z-index: 999;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        text-shadow: black 0px 0 5px;
+                                    }
+                                }
+
+                                i.roll_specialite {
+                                    position:absolute;
+                                    left:2px;
+                                    top: 10px;
+                                    z-index: 999;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        text-shadow: black 0px 0 5px;
+                                    }
+                                }
+
+                                input[type=text] {
+                                    width:calc(100% - 34px - 13px);
+                                    border-top:0px;
+                                    border-left:0px;
+                                    border-right:0px;
+                                    background:transparent;
+                                    border-bottom:1px solid $black;
+                                    border-radius:0px;
+                                    padding-top:9px;
+                                    padding-left:20px;
+                                    margin-right:2px;
+                                }
+
+                                label {
+                                    display:flex;
+                                    align-items: flex-end;
+                                    width:30px;
+                                    border-bottom:1px solid $black;
+                                    margin-right:15px;
+
+                                    input[type=number] {
+                                        text-align: right;
+                                        width: 100%;
+                                        border: 0px;
+                                        background: transparent;
+                                        padding-right: 0px;
+                                        padding-top: 9px;
+                                    }
+
+                                    span {
+                                        display: inline-block;
+                                        width: max-content;
+                                        text-align: left;
+                                    }
+                                }
+
+                                textarea {
+                                    width:100%;
+                                    font-family: inherit;
+                                    font-size: 11px;
+                                    letter-spacing: 1px;
+                                }
+                            }
+                        }
+
+                        &.subBlock {
+                            z-index:999;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.mainBlock {
+            @include blockH;
+            display:grid;
+            row-gap: 5px;
+            column-gap: 20px;
+            grid-template-rows:auto;
+            grid-template-columns: 1fr 1fr;
+
+            margin-top: -30px;
+            padding-top: 30px;
+            text-align: left;
+
+            align-items: flex-start;
+        }
+
+        &.bonus {
+            font-size: 11px;
+        }
+    }
+}

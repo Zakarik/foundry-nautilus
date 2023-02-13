@@ -1,0 +1,78 @@
+{
+  "id": "nautilus",
+  "title": "Nautilus",
+  "description": "La fiche officielle de Nautilus, approuvée par Deadcrow.",
+  "version": "1.0",
+  "esmodules": [
+    "module/nautilus.mjs"
+  ],
+  "styles": [
+    "styles/nautilus.css"
+  ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "French",
+      "path": "lang/fr.json",
+      "flags": {}
+    }
+  ],
+  "authors": [
+    {
+      "name": "Zakarik",
+      "url": "https://fr.tipeee.com/zakarik",
+      "discord": "Zakarik#9006",
+      "flags": {}
+    }
+  ],
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "packs":[
+    {
+      "label": "Améliorations du Nautilus",
+      "type": "Item",
+      "name": "ameliorations-du-nautilus",
+      "path": "packs/ameliorations-du-nautilus.db"
+    },
+    {
+      "label": "Armes à distance",
+      "type": "Item",
+      "name": "armes-a-distance",
+      "path": "packs/armes-a-distance.db"
+    },
+    {
+      "label": "Armes de mêlée",
+      "type": "Item",
+      "name": "armes-de-melee",
+      "path": "packs/armes-de-melee.db"
+    },
+    {
+      "label": "Créatures",
+      "type": "Actor",
+      "name": "creatures",
+      "path": "packs/creatures.db"
+    },
+    {
+      "label": "Équipage",
+      "type": "Actor",
+      "name": "equipage",
+      "path": "packs/equipage.db"
+    },
+    {
+      "label": "Vaisseaux",
+      "type": "Actor",
+      "name": "vaisseaux",
+      "path": "packs/vaisseaux.db"
+    }
+  ],
+  "gridDistance": 5,
+  "gridUnits": "m",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "readme": "",
+  "changelog": "",
+  "primaryTokenAttribute": "sante"
+}

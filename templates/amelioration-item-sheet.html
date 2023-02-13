@@ -1,0 +1,106 @@
+<form class="flexcol {{cssClass}}" autocomplete="off">
+
+    <header class="sheet-header flexrow">
+        <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}" />
+        <h1 class="charname">
+            <input name="name" type="text" value="{{data.name}}" placeholder="{{localize "NAUTILUS.PERSONNAGE.Nom"}}" />
+        </h1>
+        <div class="flexrow mainBlock">
+            <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+            {{editor systemData.description target="system.description" button=true owner=owner editable=editable}}
+        </div>
+    </header>
+    <section class="sheet-body">
+        <div class="menu">
+            <button type="action" data-value="{{systemData.roll.actif}}" data-type="roll" class="{{#if systemData.roll.actif}}active{{/if}}">
+                {{localize "NAUTILUS.BONUS.ROLL.Label"}}
+            </button>
+
+            <button type="action" data-value="{{systemData.distance.actif}}" data-type="distance" class="{{#if systemData.distance.actif}}active{{/if}}">
+                {{localize "NAUTILUS.BONUS.DISTANCE.Label"}}
+            </button>
+
+            <button type="action" data-value="{{systemData.sante.actif}}" data-type="sante" class="{{#if systemData.sante.actif}}active{{/if}}">
+                {{localize "NAUTILUS.BONUS.SANTE.Label"}}
+            </button>
+        </div>
+
+        <div class="body">
+            <div class="bonus roll {{#unless systemData.roll.actif}}hide{{/unless}}">
+                <h2>{{localize "NAUTILUS.BONUS.ROLL.Label"}}</h2>
+                <div class="mainBlock">
+                    <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+                    <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+                    <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+                    <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+                    <div class="num">
+                        <span>{{localize "NAUTILUS.BONUS.ROLL.Bonus"}}</span>
+                        <label>
+                            <input type="number" name="system.roll.value" value="{{systemData.roll.value}}" min="0" />
+                        </label>
+                    </div>
+                    <div class="select" class="aptitude">
+                        <span>{{localize "NAUTILUS.BONUS.ROLL.Aptitude"}}</span>
+                        <select name="system.roll.aptitude" class="aptitude">
+                            {{#select systemData.roll.aptitude}}
+                                {{#each systemData.roll.list.aptitudes}}
+                                    <option value="{{this}}">{{translate this 'aptitudes'}}</option>
+                                {{/each}}
+                            {{/select}}
+                        </select>
+                    </div>
+                    <div class="select">
+                        <span>{{localize "NAUTILUS.BONUS.ROLL.Specialite"}}</span>
+                        <select name="system.roll.specialite">
+                            {{#select systemData.roll.specialite}}
+                                {{#each systemData.roll.list.specialites}}
+                                    <option value="{{this}}">{{translate this 'aptitudes'}}</option>
+                                {{/each}}
+                            {{/select}}
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bonus distance {{#unless systemData.distance.actif}}hide{{/unless}}">
+                <h2>{{localize "NAUTILUS.BONUS.DISTANCE.Label"}}</h2>
+                <div class="mainBlock">
+                    <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+                    <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+                    <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+                    <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+                    <div class="num">
+                        <span>{{localize "NAUTILUS.BONUS.DISTANCE.Degats"}}</span>
+                        <label>
+                            <input type="number" name="system.distance.degats" value="{{systemData.distance.degats}}" min="0" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bonus sante {{#unless systemData.sante.actif}}hide{{/unless}}">
+                <h2>{{localize "NAUTILUS.BONUS.SANTE.Label"}}</h2>
+                <div class="mainBlock">
+                    <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+                    <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+                    <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+                    <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+                    <div class="num">
+                        <span>{{localize "NAUTILUS.BONUS.SANTE.Simple"}}</span>
+                        <label>
+                            <input type="number" name="system.sante.value" value="{{systemData.sante.value}}" min="0" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</form>

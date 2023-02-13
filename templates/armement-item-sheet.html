@@ -1,0 +1,24 @@
+<form class="flexcol {{cssClass}}" autocomplete="off">
+
+    <header class="sheet-header flexrow">
+        <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}" />
+        <h1 class="charname">
+            <input name="name" type="text" value="{{data.name}}" placeholder="{{localize "NAUTILUS.PERSONNAGE.Nom"}}" />
+        </h1>
+        <div class="flexrow mainBlock">
+            <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+            {{editor systemData.description target="system.description" button=true owner=owner editable=editable}}
+
+            <div class="num">
+                <span>{{localize "NAUTILUS.BONUS.DISTANCE.Degats"}}</span>
+                <label>
+                    <input type="number" name="system.degats" value="{{systemData.degats}}" min="0" />
+                </label>
+            </div>
+        </div>
+    </header>
+</form>

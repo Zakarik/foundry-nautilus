@@ -1,0 +1,19 @@
+<div class="sem">
+    <h1>
+        <span>{{localize "NAUTILUS.VAISSEAUX.SEMAINES.Label"}}</span>
+    </h1>
+    <div class="mainBlock">
+        <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+        <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+        <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+        <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+        {{#each systemData.semaines.list}}
+        <div class="semaines" data-semaine="{{this}}" data-actuel="{{@root/systemData/semaines/value}}">
+            {{#if (semCheck this @root/systemData/semaines/value)}}
+                <span>X</span>
+            {{/if}}
+        </div>
+        {{/each}}
+    </div>
+</div>

@@ -1,0 +1,97 @@
+<div class="tab equipement" data-group="primary" data-tab="equipement">
+    <div class="distance">
+        <h1>
+            <span>{{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.DISTANCE.Label"}}</span>
+        </h1>
+        <div class="mainBlock">
+            <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+            <div class="add item-create" data-type="distance">
+                + {{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.DISTANCE.Label"}}
+            </div>
+
+            <div>
+                <span class="header">{{localize "NAUTILUS.PERSONNAGE.Nom"}}</span>
+                <span class="header border">{{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.Degats"}}</span>
+            </div>
+
+            {{#each actor.distance as |key distance|}}
+            <div class="list summary" data-item-id="{{key._id}}">
+                <div class="gestionButton">
+                    <a class="item-control item-edit" title="{{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.EditWpn"}}"><i class="fa-duotone fa-gears"></i></a>
+                    <a class="item-control item-delete" title="{{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.DeleteWpn"}}"><i class="fa-duotone fa-trash"></i></a>
+                </div>
+
+                <span class="nom roll_wpn draggable" data-aptitude="viser" data-wpn="{{key._id}}"><i class="fa-solid fa-dice-d10"></i> {{key.name}}</span>
+                <span class="border">{{key.system.degats}}</span>
+                <span class="description">{{{key.system.description}}}</span>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="melee">
+        <h1>
+            <span>{{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.MELEE.Label"}}</span>
+        </h1>
+        <div class="mainBlock">
+            <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+            <div class="add item-create" data-type="melee">
+                + {{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.MELEE.Label"}}
+            </div>
+
+            <div>
+                <span class="header">{{localize "NAUTILUS.PERSONNAGE.Nom"}}</span>
+                <span class="header border">{{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.Degats"}}</span>
+            </div>
+            {{#each actor.melee as |key melee|}}
+            <div class="list summary" data-item-id="{{key._id}}">
+                <div class="gestionButton">
+                    <a class="item-control item-edit" title="{{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.EditWpn"}}"><i class="fa-duotone fa-gears"></i></a>
+                    <a class="item-control item-delete" title="{{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.DeleteWpn"}}"><i class="fa-duotone fa-trash"></i></a>
+                </div>
+
+                <span class="nom roll_wpn draggable" data-aptitude="sebattre" data-wpn="{{key._id}}"><i class="fa-solid fa-dice-d10"></i> {{key.name}}</span>
+                <span class="border">{{key.system.degats}}</span>
+                <span class="description">{{{key.system.description}}}</span>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="equip">
+        <h1>
+            <span>{{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.Label"}}</span>
+        </h1>
+        <div class="mainBlock">
+            <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+            <div class="add item-create" data-type="equipement">
+                + {{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.Label"}}
+            </div>
+
+            {{#each actor.equipement as |key equipement|}}
+            <div class="list summary" data-item-id="{{key._id}}">
+                <div class="gestionButton">
+                    <a class="item-control item-edit" title="{{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.EditEquipement"}}"><i class="fa-duotone fa-gears"></i></a>
+                    <a class="item-control item-delete" title="{{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.DeleteEquipement"}}"><i class="fa-duotone fa-trash"></i></a>
+                </div>
+
+                <span class="nom"><i class="fa-solid fa-comment-dots"></i> {{key.name}}</span>
+                <span class="description">{{{key.system.description}}}</span>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+

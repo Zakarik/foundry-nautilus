@@ -1,0 +1,3514 @@
+.nautilus.personnage {
+  font-family: "Segoe Ui", Arial;
+  min-width: 850px;
+}
+.nautilus.personnage section.window-content {
+  background: URL("../assets/fond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.nautilus.personnage header.sheet-header {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-gap: 5px;
+  align-items: flex-start;
+}
+.nautilus.personnage header.sheet-header > img {
+  width: 100%;
+  height: 100%;
+  grid-column: 1;
+  grid-row: 1/3;
+  object-fit: contain;
+  background: white;
+}
+.nautilus.personnage header.sheet-header h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  grid-column: 2;
+  grid-row: 1;
+}
+.nautilus.personnage header.sheet-header h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.nautilus.personnage header.sheet-header h1 input {
+  width: 100%;
+  margin: 0px;
+  padding: 10px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+}
+.nautilus.personnage header.sheet-header div.identite {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  grid-column: 2;
+  grid-row: 2/4;
+  margin-top: -35px;
+  padding-top: 30px;
+}
+.nautilus.personnage header.sheet-header div.identite img.borderTL, .nautilus.personnage header.sheet-header div.identite img.borderBL, .nautilus.personnage header.sheet-header div.identite img.borderTR, .nautilus.personnage header.sheet-header div.identite img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.personnage header.sheet-header div.identite img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.personnage header.sheet-header div.identite img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.personnage header.sheet-header div.identite img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.personnage header.sheet-header div.identite img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.personnage header.sheet-header div.identite label {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.nautilus.personnage header.sheet-header div.identite label.autospan span {
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.nautilus.personnage header.sheet-header div.identite label.autospan input {
+  width: 100%;
+  border-radius: 0px;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: RGB(117, 76, 40);
+  background: transparent;
+  margin: 0px 0px 0px 5px;
+  padding: 0px;
+  letter-spacing: 1px;
+}
+.nautilus.personnage header.sheet-header div.identite label.textarea {
+  flex-wrap: wrap;
+  padding: 0px;
+}
+.nautilus.personnage header.sheet-header div.identite label.textarea span {
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.nautilus.personnage header.sheet-header div.identite label.textarea textarea {
+  width: 100%;
+  border-radius: 0px;
+  background: white;
+  margin: 0px;
+  padding: 0px;
+  border: 2px solid RGB(117, 76, 40);
+  font-family: inherit;
+}
+.nautilus.personnage header.sheet-header div.identiteOther {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  grid-column: 2;
+  margin-top: 30px;
+  grid-row: 1/4;
+  padding-top: 30px;
+  height: calc(100% - 30px);
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.nautilus.personnage header.sheet-header div.identiteOther img.borderTL, .nautilus.personnage header.sheet-header div.identiteOther img.borderBL, .nautilus.personnage header.sheet-header div.identiteOther img.borderTR, .nautilus.personnage header.sheet-header div.identiteOther img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.personnage header.sheet-header div.identiteOther img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.personnage header.sheet-header div.identiteOther img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.personnage header.sheet-header div.identiteOther img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.personnage header.sheet-header div.identiteOther img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.personnage header.sheet-header div.identiteOther label {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.nautilus.personnage header.sheet-header div.identiteOther label.autospan span {
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.nautilus.personnage header.sheet-header div.identiteOther label.autospan input {
+  width: 100%;
+  border-radius: 0px;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: RGB(117, 76, 40);
+  background: transparent;
+  margin: 0px 0px 0px 5px;
+  padding: 0px;
+  letter-spacing: 1px;
+}
+.nautilus.personnage header.sheet-header div.identiteOther label.textarea {
+  flex-wrap: wrap;
+  padding: 0px;
+}
+.nautilus.personnage header.sheet-header div.identiteOther label.textarea span {
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.nautilus.personnage header.sheet-header div.identiteOther label.textarea textarea {
+  width: 100%;
+  border-radius: 0px;
+  background: white;
+  margin: 0px;
+  padding: 0px;
+  border: 2px solid RGB(117, 76, 40);
+  font-family: inherit;
+}
+.nautilus.personnage header.sheet-header div.pression {
+  background: RGB(152, 188, 83);
+  grid-column: 1;
+  grid-row: 3;
+  text-align: center;
+  font-weight: bold;
+  font-variant: small-caps;
+  line-height: 30px;
+  border: 1px solid black;
+}
+.nautilus.personnage header.sheet-header div.pression.p0 {
+  background: RGB(182, 161, 131);
+}
+.nautilus.personnage header.sheet-header div.pression.p5 {
+  background: RGB(152, 188, 83);
+}
+.nautilus.personnage header.sheet-header div.pression.p6 {
+  background: RGB(231, 220, 92);
+}
+.nautilus.personnage header.sheet-header div.pression.p7 {
+  background: RGB(242, 177, 93);
+}
+.nautilus.personnage header.sheet-header div.pression.p8 {
+  background: RGB(227, 61, 70);
+}
+.nautilus.personnage header.sheet-header div.pression.p11 {
+  background: RGB(141, 76, 133);
+}
+.nautilus.personnage header.sheet-header div.difficulte {
+  background: white;
+  grid-column: 1;
+  grid-row: 3;
+  display: grid;
+  grid-gap: 5px;
+  grid-auto-columns: 1fr 1fr;
+  text-align: left;
+  font-weight: bold;
+  font-variant: small-caps;
+  line-height: 30px;
+  border: 1px solid black;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.nautilus.personnage header.sheet-header div.difficulte span {
+  display: inline-block;
+  grid-column: 1;
+  width: 100%;
+  white-space: nowrap;
+}
+.nautilus.personnage header.sheet-header div.difficulte input {
+  grid-column: 2;
+  width: 100%;
+  text-align: center;
+  border-radius: 0px;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: RGB(117, 76, 40);
+  background: transparent;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 1px;
+}
+.nautilus.personnage nav.tabs {
+  border: none;
+}
+.nautilus.personnage nav.tabs a {
+  border: thick double RGB(151, 112, 77);
+  background: white;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.nautilus.personnage nav.tabs a.active {
+  text-shadow: none;
+  background: URL("../assets/fondH.png");
+}
+.nautilus.personnage div.aptitudes.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+.nautilus.personnage div.aptitudes.active div.apt {
+  grid-column: 1/3;
+  text-align: center;
+  grid-gap: 5px;
+}
+.nautilus.personnage div.aptitudes.active div.apt h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  position: relative;
+  border: 0px;
+}
+.nautilus.personnage div.aptitudes.active div.apt h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.nautilus.personnage div.aptitudes.active div.apt h1 span {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 12px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 22px;
+  font-variant: small-caps;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.main {
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  line-height: 30px;
+  z-index: 99;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.main span {
+  grid-column: 1;
+  font-variant: small-caps;
+  cursor: pointer;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.main span:hover {
+  font-weight: bold;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.main label {
+  grid-column: 2;
+  background: URL("../assets/compteur.png");
+  background-size: 56px 26px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.main label input {
+  width: 100%;
+  text-align: center;
+  border: 0px;
+  background: transparent;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.add {
+  width: max-content;
+  font-variant: small-caps;
+  margin-left: auto;
+  cursor: pointer;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.add:hover {
+  font-weight: bold;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.sub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.sub div {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.sub div i.deleteSpecialite {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  z-index: 999;
+  cursor: pointer;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.sub div i.deleteSpecialite:hover {
+  text-shadow: black 0px 0 5px;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.sub div i.roll_specialite {
+  position: absolute;
+  left: 2px;
+  top: 10px;
+  z-index: 999;
+  cursor: pointer;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.sub div i.roll_specialite:hover {
+  text-shadow: black 0px 0 5px;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.sub div input[type=text] {
+  width: calc(100% - 34px - 13px);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+  padding-top: 9px;
+  padding-left: 20px;
+  margin-right: 2px;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.sub div label {
+  display: flex;
+  align-items: flex-end;
+  width: 30px;
+  border-bottom: 1px solid black;
+  margin-right: 15px;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.sub div label input[type=number] {
+  text-align: right;
+  width: 100%;
+  border: 0px;
+  background: transparent;
+  padding-right: 0px;
+  padding-top: 9px;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.sub div label span {
+  display: inline-block;
+  width: max-content;
+  text-align: left;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.sub div textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.nautilus.personnage div.aptitudes.active div.apt div.mainBlock div.subBlock {
+  z-index: 999;
+}
+.nautilus.personnage div.aptitudes.active div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  row-gap: 5px;
+  column-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -30px;
+  padding-top: 30px;
+  text-align: left;
+  align-items: flex-start;
+}
+.nautilus.personnage div.aptitudes.active div.mainBlock img.borderTL, .nautilus.personnage div.aptitudes.active div.mainBlock img.borderBL, .nautilus.personnage div.aptitudes.active div.mainBlock img.borderTR, .nautilus.personnage div.aptitudes.active div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.personnage div.aptitudes.active div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.personnage div.aptitudes.active div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.personnage div.aptitudes.active div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.personnage div.aptitudes.active div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.personnage div.aptitudes.active div.bonus {
+  font-size: 11px;
+}
+.nautilus.personnage div.vmsan.active {
+  display: grid;
+  grid-template-columns: 456px 1fr;
+  grid-gap: 5px;
+}
+.nautilus.personnage div.vmsan.active div.vm {
+  grid-column: 1;
+  text-align: center;
+  grid-gap: 5px;
+}
+.nautilus.personnage div.vmsan.active div.vm h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  position: relative;
+  border: 0px;
+}
+.nautilus.personnage div.vmsan.active div.vm h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.nautilus.personnage div.vmsan.active div.vm h1 span {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 12px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 22px;
+  font-variant: small-caps;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  justify-content: center;
+  row-gap: 5px;
+  column-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: 64px 64px 35px 35px 64px 64px;
+  margin-top: -30px;
+  padding-top: 30px;
+  text-align: left;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock img.borderTL, .nautilus.personnage div.vmsan.active div.vm div.mainBlock img.borderBL, .nautilus.personnage div.vmsan.active div.vm div.mainBlock img.borderTR, .nautilus.personnage div.vmsan.active div.vm div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmBlock div {
+  display: flex;
+  background: URL("../assets/morale.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  padding-top: 16px;
+  margin-top: auto;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmBlock div span {
+  width: 7px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 35px;
+  height: 35px;
+  text-align: center;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmBlock div input {
+  width: 14px;
+  height: 35px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0px;
+  background: transparent;
+  min-width: 0px;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmBlock div input:first-of-type {
+  text-align: right;
+  margin-left: auto;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmBlock div input:last-of-type {
+  text-align: left;
+  margin-right: auto;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmBlock span.label {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmBlock span.lvmc {
+  color: blue;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmLiberte {
+  grid-column: 1/3;
+  margin-left: auto;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmLiberte div {
+  grid-column: 2;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmLiberte span.label {
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: auto;
+  margin-top: 20px;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmVerite {
+  grid-column: 3/5;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmVerite div {
+  grid-column: 1/3;
+  grid-row: 2;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmVerite span.label {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmJustice {
+  grid-column: 5/7;
+  margin-right: auto;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmJustice div {
+  grid-column: 1;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmJustice span.label {
+  grid-column: 2;
+  grid-row: 1;
+  margin-bottom: auto;
+  margin-top: 20px;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmPacifisme {
+  grid-column: 1/4;
+  grid-row: 2;
+  margin-left: auto;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmPacifisme div {
+  grid-column: 2;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmPacifisme span.label {
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: auto;
+  margin-top: 40px;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmProgres {
+  grid-column: 4/7;
+  grid-row: 2;
+  margin-right: auto;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmProgres div {
+  grid-column: 1;
+}
+.nautilus.personnage div.vmsan.active div.vm div.mainBlock div.vmProgres span.label {
+  grid-column: 2;
+  grid-row: 1;
+  margin-bottom: auto;
+  margin-top: 40px;
+}
+.nautilus.personnage div.vmsan.active div.san {
+  grid-column: 2;
+  text-align: center;
+  grid-gap: 5px;
+}
+.nautilus.personnage div.vmsan.active div.san h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  position: relative;
+  border: 0px;
+}
+.nautilus.personnage div.vmsan.active div.san h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.nautilus.personnage div.vmsan.active div.san h1 span {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 12px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 22px;
+  font-variant: small-caps;
+}
+.nautilus.personnage div.vmsan.active div.san div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-rows: auto;
+  grid-template-columns: 70px 52px 1fr 70px;
+  align-items: center;
+  margin-top: -30px;
+  padding-top: 30px;
+}
+.nautilus.personnage div.vmsan.active div.san div.mainBlock img.borderTL, .nautilus.personnage div.vmsan.active div.san div.mainBlock img.borderBL, .nautilus.personnage div.vmsan.active div.san div.mainBlock img.borderTR, .nautilus.personnage div.vmsan.active div.san div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.personnage div.vmsan.active div.san div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.personnage div.vmsan.active div.san div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.personnage div.vmsan.active div.san div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.personnage div.vmsan.active div.san div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.personnage div.vmsan.active div.san div.mainBlock span {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.nautilus.personnage div.vmsan.active div.san div.mainBlock span.header {
+  font-variant: small-caps;
+  background: RGB(117, 76, 40);
+  color: white;
+  line-height: 36px;
+}
+.nautilus.personnage div.vmsan.active div.san div.mainBlock span.border {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+.nautilus.personnage div.vmsan.active div.san div.mainBlock span.lBorder {
+  border-left: 1px solid white;
+}
+.nautilus.personnage div.vmsan.active div.san div.mainBlock span.tBorder {
+  border-top: 1px solid white;
+}
+.nautilus.personnage div.vmsan.active div.san div.mainBlock span.sanCheck {
+  font-size: 30px;
+  cursor: pointer;
+}
+.nautilus.personnage div.vmsan.active div.san div.mainBlock span.padding {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.nautilus.personnage div.vmsan.active div.san.other div.mainBlock {
+  grid-template-columns: 70px 52px 1fr;
+}
+.nautilus.personnage div.vmsan.active div.san.other div.mainBlock div.textarea {
+  grid-column: 3;
+  width: 100%;
+  min-height: 41px;
+  border-left: 1px solid white;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid white;
+  flex-wrap: wrap;
+}
+.nautilus.personnage div.vmsan.active div.san.other div.mainBlock div.textarea textarea {
+  padding: 0px;
+  border: 0px;
+  font-family: inherit;
+}
+.nautilus.personnage div.vmsan.active div.san.other div.mainBlock div.textarea select {
+  width: 100%;
+  padding: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 0px;
+  border-radius: 0px;
+  font-family: inherit;
+  text-align: center;
+}
+.nautilus.personnage div.vmsan.active div.psan {
+  grid-column: 1;
+  text-align: center;
+  grid-gap: 5px;
+}
+.nautilus.personnage div.vmsan.active div.psan h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  position: relative;
+  border: 0px;
+}
+.nautilus.personnage div.vmsan.active div.psan h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.nautilus.personnage div.vmsan.active div.psan h1 span {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 12px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 22px;
+  font-variant: small-caps;
+}
+.nautilus.personnage div.vmsan.active div.psan div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: -30px;
+  padding-top: 30px;
+}
+.nautilus.personnage div.vmsan.active div.psan div.mainBlock img.borderTL, .nautilus.personnage div.vmsan.active div.psan div.mainBlock img.borderBL, .nautilus.personnage div.vmsan.active div.psan div.mainBlock img.borderTR, .nautilus.personnage div.vmsan.active div.psan div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.personnage div.vmsan.active div.psan div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.personnage div.vmsan.active div.psan div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.personnage div.vmsan.active div.psan div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.personnage div.vmsan.active div.psan div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.personnage div.vmsan.active div.psan div.mainBlock span {
+  display: inline-flex;
+  min-height: 41px;
+  align-items: center;
+  align-content: center;
+  justify-content: left;
+  grid-column: 1;
+}
+.nautilus.personnage div.vmsan.active div.psan div.mainBlock input[type=number] {
+  grid-column: 2;
+  background: transparent;
+  border-radius: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom-width: 2px;
+  text-align: center;
+  width: 100%;
+  z-index: 999;
+}
+.nautilus.personnage div.equipement.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+.nautilus.personnage div.equipement.active div h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  position: relative;
+  border: 0px;
+}
+.nautilus.personnage div.equipement.active div h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.nautilus.personnage div.equipement.active div h1 span {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 12px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 22px;
+  font-variant: small-caps;
+}
+.nautilus.personnage div.equipement.active div.distance, .nautilus.personnage div.equipement.active div.melee {
+  text-align: center;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock, .nautilus.personnage div.equipement.active div.melee div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondV.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  margin-top: -30px;
+  padding-top: 30px;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock img.borderTL, .nautilus.personnage div.equipement.active div.distance div.mainBlock img.borderBL, .nautilus.personnage div.equipement.active div.distance div.mainBlock img.borderTR, .nautilus.personnage div.equipement.active div.distance div.mainBlock img.borderBR, .nautilus.personnage div.equipement.active div.melee div.mainBlock img.borderTL, .nautilus.personnage div.equipement.active div.melee div.mainBlock img.borderBL, .nautilus.personnage div.equipement.active div.melee div.mainBlock img.borderTR, .nautilus.personnage div.equipement.active div.melee div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock img.borderTL, .nautilus.personnage div.equipement.active div.melee div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock img.borderBL, .nautilus.personnage div.equipement.active div.melee div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock img.borderTR, .nautilus.personnage div.equipement.active div.melee div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock img.borderBR, .nautilus.personnage div.equipement.active div.melee div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock div, .nautilus.personnage div.equipement.active div.melee div.mainBlock div {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 70px;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock div.add, .nautilus.personnage div.equipement.active div.melee div.mainBlock div.add {
+  display: inline-block;
+  width: max-content;
+  font-variant: small-caps;
+  margin-left: auto;
+  cursor: pointer;
+  z-index: 999;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock div.add:hover, .nautilus.personnage div.equipement.active div.melee div.mainBlock div.add:hover {
+  font-weight: bold;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock div.list, .nautilus.personnage div.equipement.active div.melee div.mainBlock div.list {
+  position: relative;
+  grid-template-rows: 25px 1fr;
+  z-index: 999;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock div.list span.nom:hover, .nautilus.personnage div.equipement.active div.melee div.mainBlock div.list span.nom:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock div.list span.nom, .nautilus.personnage div.equipement.active div.distance div.mainBlock div.list span.border, .nautilus.personnage div.equipement.active div.melee div.mainBlock div.list span.nom, .nautilus.personnage div.equipement.active div.melee div.mainBlock div.list span.border {
+  line-height: 25px;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock div.list span.description, .nautilus.personnage div.equipement.active div.melee div.mainBlock div.list span.description {
+  display: inline-block;
+  text-align: justify;
+  word-break: break-all;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock div.gestionButton, .nautilus.personnage div.equipement.active div.melee div.mainBlock div.gestionButton {
+  position: absolute;
+  right: 75px;
+  line-height: 25px;
+  display: block;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock div span, .nautilus.personnage div.equipement.active div.melee div.mainBlock div span {
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  grid-row: 1;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock div span.nom, .nautilus.personnage div.equipement.active div.melee div.mainBlock div span.nom {
+  text-align: left;
+  justify-content: left;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock div span.header, .nautilus.personnage div.equipement.active div.melee div.mainBlock div span.header {
+  min-height: 36px;
+  font-variant: small-caps;
+  background: RGB(117, 76, 40);
+  color: white;
+  line-height: 36px;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock div span.border, .nautilus.personnage div.equipement.active div.melee div.mainBlock div span.border {
+  border-left: 1px solid white;
+}
+.nautilus.personnage div.equipement.active div.distance div.mainBlock div span.description, .nautilus.personnage div.equipement.active div.melee div.mainBlock div span.description {
+  grid-row: 2;
+  grid-column: 1/3;
+  width: 100%;
+  border: 1px solid RGB(117, 76, 40);
+  background: white;
+}
+.nautilus.personnage div.equipement.active div.equip {
+  text-align: center;
+  grid-column: 1/3;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondV.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+  margin-top: -30px;
+  padding-top: 30px;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock img.borderTL, .nautilus.personnage div.equipement.active div.equip div.mainBlock img.borderBL, .nautilus.personnage div.equipement.active div.equip div.mainBlock img.borderTR, .nautilus.personnage div.equipement.active div.equip div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock div {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  margin-bottom: 5px;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock div.add {
+  display: inline-block;
+  width: max-content;
+  font-variant: small-caps;
+  margin-left: auto;
+  cursor: pointer;
+  z-index: 999;
+  grid-column: 1/3;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock div.add:hover {
+  font-weight: bold;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock div.list {
+  position: relative;
+  grid-template-rows: 25px 1fr;
+  z-index: 999;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock div.list span.nom, .nautilus.personnage div.equipement.active div.equip div.mainBlock div.list span.border {
+  line-height: 25px;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock div.list span.description {
+  display: inline-block;
+  text-align: justify;
+  word-break: break-all;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock div.gestionButton {
+  position: absolute;
+  right: 0px;
+  line-height: 25px;
+  display: block;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock div span {
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  grid-row: 1;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock div span.nom {
+  text-align: left;
+  justify-content: left;
+  cursor: pointer;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock div span.nom:hover {
+  font-weight: bold;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock div span.border {
+  border-left: 1px solid white;
+}
+.nautilus.personnage div.equipement.active div.equip div.mainBlock div span.description {
+  grid-row: 2;
+  grid-column: 1/3;
+  width: 100%;
+  border: 1px solid RGB(117, 76, 40);
+  background: white;
+}
+.nautilus.personnage div.historique.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  text-align: center;
+}
+.nautilus.personnage div.historique.active h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  position: relative;
+  border: 0px;
+}
+.nautilus.personnage div.historique.active h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.nautilus.personnage div.historique.active h1 span {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 12px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 22px;
+  font-variant: small-caps;
+}
+.nautilus.personnage div.historique.active div.description {
+  grid-column: 1/3;
+}
+.nautilus.personnage div.historique.active div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondV.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  margin-top: -30px;
+  padding-top: 30px;
+}
+.nautilus.personnage div.historique.active div.mainBlock img.borderTL, .nautilus.personnage div.historique.active div.mainBlock img.borderBL, .nautilus.personnage div.historique.active div.mainBlock img.borderTR, .nautilus.personnage div.historique.active div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.personnage div.historique.active div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.personnage div.historique.active div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.personnage div.historique.active div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.personnage div.historique.active div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.personnage div.historique.active div.editor {
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: left;
+  background: white;
+}
+.nautilus.personnage div.historique.active div.editor.tinymce {
+  min-height: 200px;
+  padding: 0px;
+}
+.nautilus.personnage div.historique.active div.editor div.tox-sidebar-wrap {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.nautilus.personnage div.historique.active div.editor p {
+  letter-spacing: 1px;
+}
+
+.nautilus.vaisseaux {
+  font-family: "Segoe Ui", Arial;
+  min-width: 850px;
+}
+.nautilus.vaisseaux section.window-content {
+  background: URL("../assets/fond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.nautilus.vaisseaux nav.tabs {
+  border: none;
+}
+.nautilus.vaisseaux nav.tabs a {
+  border: thick double RGB(151, 112, 77);
+  background: white;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.nautilus.vaisseaux nav.tabs a.active {
+  text-shadow: none;
+  background: URL("../assets/fondH.png");
+}
+.nautilus.vaisseaux h1.charname {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  margin-bottom: -30px;
+  position: relative;
+  border: 0px;
+}
+.nautilus.vaisseaux h1.charname input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.nautilus.vaisseaux h1.charname input {
+  width: 100%;
+  margin: 0px;
+  padding: 10px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  height: 45px;
+  font-weight: bold;
+}
+.nautilus.vaisseaux img.profile-img {
+  width: 100%;
+  height: 250px;
+  background: white;
+  object-fit: contain;
+}
+.nautilus.vaisseaux div.aptsan.active {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: max-content 1fr;
+  grid-gap: 5px;
+}
+.nautilus.vaisseaux div.aptsan.active div h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  position: relative;
+  border: 0px;
+}
+.nautilus.vaisseaux div.aptsan.active div h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.nautilus.vaisseaux div.aptsan.active div h1 span {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 12px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 22px;
+  font-variant: small-caps;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt {
+  text-align: center;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondV.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  margin-top: -30px;
+  padding-top: 30px;
+  text-align: right;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.mainBlock img.borderTL, .nautilus.vaisseaux div.aptsan.active div.apt div.mainBlock img.borderBL, .nautilus.vaisseaux div.aptsan.active div.apt div.mainBlock img.borderTR, .nautilus.vaisseaux div.aptsan.active div.apt div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock {
+  z-index: 999;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.main {
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  grid-gap: 5px;
+  margin-top: 10px;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.main span {
+  width: 100%;
+  font-size: 15px;
+  font-variant: small-caps;
+  font-weight: bold;
+  line-height: 20px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.main span:hover {
+  text-shadow: 0px 0px 5px black;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.main label {
+  grid-column: 2;
+  background: URL("../assets/compteur.png");
+  background-size: 56px 26px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.main label input {
+  width: 100%;
+  text-align: center;
+  border: 0px;
+  background: transparent;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 999;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.add {
+  width: max-content;
+  font-variant: small-caps;
+  margin-left: auto;
+  cursor: pointer;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.add:hover {
+  font-weight: bold;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.sub {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.sub div {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.sub div i.deleteSpecialite {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  z-index: 999;
+  cursor: pointer;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.sub div i.deleteSpecialite:hover {
+  text-shadow: black 0px 0 5px;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.sub div i.roll_specialite {
+  position: absolute;
+  left: 2px;
+  top: 10px;
+  z-index: 999;
+  cursor: pointer;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.sub div i.roll_specialite:hover {
+  text-shadow: black 0px 0 5px;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.sub div span.spenautilus {
+  width: calc(100% - 47px);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+  padding-top: 9px;
+  margin-right: 2px;
+  text-align: left;
+  cursor: pointer;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.sub div span.spenautilus:hover {
+  text-shadow: black 0px 0 5px;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.sub div input[type=text] {
+  width: calc(100% - 34px - 13px);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+  padding-top: 9px;
+  padding-left: 20px;
+  margin-right: 2px;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.sub div label {
+  display: flex;
+  align-items: flex-end;
+  width: 30px;
+  border-bottom: 1px solid black;
+  margin-right: 15px;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.sub div label input[type=number] {
+  text-align: right;
+  width: 100%;
+  border: 0px;
+  background: transparent;
+  padding-right: 0px;
+  padding-top: 9px;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.sub div label span {
+  display: inline-block;
+  width: max-content;
+  text-align: left;
+}
+.nautilus.vaisseaux div.aptsan.active div.apt div.subBlock div.sub input {
+  text-align: left;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan {
+  grid-row: 1/3;
+  grid-column: 2;
+  text-align: center;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondV.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 70px 52px 1fr;
+  align-items: flex-start;
+  margin-top: -30px;
+  padding-top: 30px;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock img.borderTL, .nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock img.borderBL, .nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock img.borderTR, .nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock span {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  min-height: 41px;
+  z-index: 999;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock span.header {
+  font-variant: small-caps;
+  background: RGB(117, 76, 40);
+  color: white;
+  line-height: 36px;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock span.border {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock span.lBorder {
+  border-left: 1px solid white;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock span.tBorder {
+  border-top: 1px solid white;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock span.sanCheck {
+  font-size: 30px;
+  cursor: pointer;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock span.padding {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock span.left {
+  text-align: justify;
+  padding-left: 5px;
+  justify-content: left;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock span b {
+  display: contents;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock div.textarea {
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  z-index: 999;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock div.textarea textarea {
+  padding: 0px;
+  border: 0px;
+  font-family: inherit;
+}
+.nautilus.vaisseaux div.aptsan.active div.nsan div.mainBlock div.textarea select {
+  width: 100%;
+  padding: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 0px;
+  border-radius: 0px;
+  font-family: inherit;
+  text-align: center;
+}
+.nautilus.vaisseaux div.aptsan.active div.psan {
+  grid-column: 1;
+  text-align: center;
+  grid-gap: 5px;
+}
+.nautilus.vaisseaux div.aptsan.active div.psan h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  position: relative;
+  border: 0px;
+}
+.nautilus.vaisseaux div.aptsan.active div.psan h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.nautilus.vaisseaux div.aptsan.active div.psan h1 span {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 12px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 22px;
+  font-variant: small-caps;
+}
+.nautilus.vaisseaux div.aptsan.active div.psan div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: -30px;
+  padding-top: 30px;
+}
+.nautilus.vaisseaux div.aptsan.active div.psan div.mainBlock img.borderTL, .nautilus.vaisseaux div.aptsan.active div.psan div.mainBlock img.borderBL, .nautilus.vaisseaux div.aptsan.active div.psan div.mainBlock img.borderTR, .nautilus.vaisseaux div.aptsan.active div.psan div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.vaisseaux div.aptsan.active div.psan div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.vaisseaux div.aptsan.active div.psan div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.vaisseaux div.aptsan.active div.psan div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.vaisseaux div.aptsan.active div.psan div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.vaisseaux div.aptsan.active div.psan div.mainBlock span {
+  display: inline-flex;
+  min-height: 41px;
+  align-items: center;
+  align-content: center;
+  justify-content: left;
+  grid-column: 1;
+}
+.nautilus.vaisseaux div.aptsan.active div.psan div.mainBlock input[type=number] {
+  grid-column: 2;
+  background: transparent;
+  border-radius: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom-width: 2px;
+  text-align: center;
+  width: 100%;
+  z-index: 999;
+}
+.nautilus.vaisseaux div.equipage.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  align-items: flex-start;
+}
+.nautilus.vaisseaux div.equipage.active div h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  position: relative;
+  border: 0px;
+}
+.nautilus.vaisseaux div.equipage.active div h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.nautilus.vaisseaux div.equipage.active div h1 span {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 12px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 22px;
+  font-variant: small-caps;
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers, .nautilus.vaisseaux div.equipage.active div.equipage {
+  text-align: center;
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers div.mainBlock, .nautilus.vaisseaux div.equipage.active div.equipage div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondV.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  margin-top: -30px;
+  padding-top: 30px;
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers div.mainBlock img.borderTL, .nautilus.vaisseaux div.equipage.active div.heritiers div.mainBlock img.borderBL, .nautilus.vaisseaux div.equipage.active div.heritiers div.mainBlock img.borderTR, .nautilus.vaisseaux div.equipage.active div.heritiers div.mainBlock img.borderBR, .nautilus.vaisseaux div.equipage.active div.equipage div.mainBlock img.borderTL, .nautilus.vaisseaux div.equipage.active div.equipage div.mainBlock img.borderBL, .nautilus.vaisseaux div.equipage.active div.equipage div.mainBlock img.borderTR, .nautilus.vaisseaux div.equipage.active div.equipage div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers div.mainBlock img.borderTL, .nautilus.vaisseaux div.equipage.active div.equipage div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers div.mainBlock img.borderBL, .nautilus.vaisseaux div.equipage.active div.equipage div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers div.mainBlock img.borderTR, .nautilus.vaisseaux div.equipage.active div.equipage div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers div.mainBlock img.borderBR, .nautilus.vaisseaux div.equipage.active div.equipage div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers div.subBlock, .nautilus.vaisseaux div.equipage.active div.equipage div.subBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  z-index: 999;
+  align-items: center;
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers div.subBlock span, .nautilus.vaisseaux div.equipage.active div.equipage div.subBlock span {
+  font-size: 15px;
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers div.subBlock span.nom, .nautilus.vaisseaux div.equipage.active div.equipage div.subBlock span.nom {
+  text-align: left;
+  font-weight: bold;
+  font-variant: small-caps;
+  word-break: break-word;
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers div.subBlock span.role, .nautilus.vaisseaux div.equipage.active div.equipage div.subBlock span.role {
+  font-variant: small-caps;
+  word-break: break-word;
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers div.actualiser, .nautilus.vaisseaux div.equipage.active div.equipage div.actualiser {
+  grid-column: 2;
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers div.actualiser span, .nautilus.vaisseaux div.equipage.active div.equipage div.actualiser span {
+  display: block;
+  width: max-content;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 5px double RGB(151, 112, 77);
+  background: white;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 999;
+  cursor: pointer;
+}
+.nautilus.vaisseaux div.equipage.active div.heritiers div.actualiser span:hover, .nautilus.vaisseaux div.equipage.active div.equipage div.actualiser span:hover {
+  text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+.nautilus.vaisseaux div.armement.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  align-items: flex-start;
+}
+.nautilus.vaisseaux div.armement.active div.addArmement {
+  grid-column: 1/3;
+  width: max-content;
+  font-variant: small-caps;
+  margin-left: auto;
+  cursor: pointer;
+  font-weight: bold;
+  border: thick double RGB(151, 112, 77);
+  background: URL("../assets/fondH.png");
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 5px 10px;
+  line-height: 15px;
+}
+.nautilus.vaisseaux div.armement.active div.addArmement:hover {
+  box-shadow: 0 0 5px var(--color-shadow-primary);
+}
+.nautilus.vaisseaux div.armement.active div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondV.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  text-align: right;
+}
+.nautilus.vaisseaux div.armement.active div.mainBlock img.borderTL, .nautilus.vaisseaux div.armement.active div.mainBlock img.borderBL, .nautilus.vaisseaux div.armement.active div.mainBlock img.borderTR, .nautilus.vaisseaux div.armement.active div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.vaisseaux div.armement.active div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.vaisseaux div.armement.active div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.vaisseaux div.armement.active div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.vaisseaux div.armement.active div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.vaisseaux div.armement.active div.subBlock {
+  display: block;
+  width: 100%;
+  z-index: 999;
+}
+.nautilus.vaisseaux div.armement.active div.subBlock header.main {
+  display: grid;
+  grid-template-columns: 20px 1fr 35px;
+  width: 100%;
+}
+.nautilus.vaisseaux div.armement.active div.subBlock header.main span.deploy {
+  line-height: 20px;
+  text-align: left;
+  font-size: 15px;
+}
+.nautilus.vaisseaux div.armement.active div.subBlock header.main span.deploy i {
+  cursor: pointer;
+}
+.nautilus.vaisseaux div.armement.active div.subBlock header.main span.deploy i:hover {
+  text-shadow: 0px 0px 5px black;
+}
+.nautilus.vaisseaux div.armement.active div.subBlock header.main span.name {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  font-variant: small-caps;
+  font-weight: bold;
+  line-height: 20px;
+  cursor: pointer;
+  text-align: left;
+}
+.nautilus.vaisseaux div.armement.active div.subBlock header.main span.name:hover {
+  text-shadow: 0px 0px 5px black;
+}
+.nautilus.vaisseaux div.armement.active div.subBlock header.main span.degats {
+  display: block;
+  line-height: 20px;
+  text-align: left;
+  grid-column: 1/3;
+}
+.nautilus.vaisseaux div.armement.active div.subBlock div.sub {
+  display: block;
+  width: 100%;
+}
+.nautilus.vaisseaux div.armement.active div.subBlock div.sub span {
+  display: block;
+  text-align: justify;
+  word-break: break-all;
+}
+.nautilus.vaisseaux div.ameava.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+.nautilus.vaisseaux div.ameava.active div h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  position: relative;
+  border: 0px;
+}
+.nautilus.vaisseaux div.ameava.active div h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.nautilus.vaisseaux div.ameava.active div h1 span {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 12px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 22px;
+  font-variant: small-caps;
+}
+.nautilus.vaisseaux div.ameava.active div.ame, .nautilus.vaisseaux div.ameava.active div.ava {
+  text-align: center;
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.add, .nautilus.vaisseaux div.ameava.active div.ava div.add {
+  width: max-content;
+  font-variant: small-caps;
+  margin-left: auto;
+  cursor: pointer;
+  z-index: 999;
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.add:hover, .nautilus.vaisseaux div.ameava.active div.ava div.add:hover {
+  font-weight: bold;
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.mainBlock, .nautilus.vaisseaux div.ameava.active div.ava div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondV.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  margin-top: -30px;
+  padding-top: 30px;
+  text-align: right;
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.mainBlock img.borderTL, .nautilus.vaisseaux div.ameava.active div.ame div.mainBlock img.borderBL, .nautilus.vaisseaux div.ameava.active div.ame div.mainBlock img.borderTR, .nautilus.vaisseaux div.ameava.active div.ame div.mainBlock img.borderBR, .nautilus.vaisseaux div.ameava.active div.ava div.mainBlock img.borderTL, .nautilus.vaisseaux div.ameava.active div.ava div.mainBlock img.borderBL, .nautilus.vaisseaux div.ameava.active div.ava div.mainBlock img.borderTR, .nautilus.vaisseaux div.ameava.active div.ava div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.mainBlock img.borderTL, .nautilus.vaisseaux div.ameava.active div.ava div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.mainBlock img.borderBL, .nautilus.vaisseaux div.ameava.active div.ava div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.mainBlock img.borderTR, .nautilus.vaisseaux div.ameava.active div.ava div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.mainBlock img.borderBR, .nautilus.vaisseaux div.ameava.active div.ava div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.subBlock, .nautilus.vaisseaux div.ameava.active div.ava div.subBlock {
+  display: block;
+  width: 100%;
+  z-index: 999;
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.subBlock header.main, .nautilus.vaisseaux div.ameava.active div.ava div.subBlock header.main {
+  display: grid;
+  grid-template-columns: 1fr 35px;
+  width: 100%;
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.subBlock header.main span, .nautilus.vaisseaux div.ameava.active div.ava div.subBlock header.main span {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  font-variant: small-caps;
+  font-weight: bold;
+  line-height: 20px;
+  cursor: pointer;
+  text-align: left;
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.subBlock header.main span:hover, .nautilus.vaisseaux div.ameava.active div.ava div.subBlock header.main span:hover {
+  text-shadow: 0px 0px 5px black;
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.subBlock div.sub, .nautilus.vaisseaux div.ameava.active div.ava div.subBlock div.sub {
+  display: block;
+  width: 100%;
+}
+.nautilus.vaisseaux div.ameava.active div.ame div.subBlock div.sub span, .nautilus.vaisseaux div.ameava.active div.ava div.subBlock div.sub span {
+  display: block;
+  text-align: justify;
+  word-break: break-all;
+}
+.nautilus.vaisseaux div.voyage.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+.nautilus.vaisseaux div.voyage.active div h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  position: relative;
+  border: 0px;
+}
+.nautilus.vaisseaux div.voyage.active div h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.nautilus.vaisseaux div.voyage.active div h1 span {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 12px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 22px;
+  font-variant: small-caps;
+}
+.nautilus.vaisseaux div.voyage.active div.sem {
+  text-align: center;
+}
+.nautilus.vaisseaux div.voyage.active div.sem div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 5px;
+  margin-top: -30px;
+  padding-top: 30px;
+  justify-items: center;
+}
+.nautilus.vaisseaux div.voyage.active div.sem div.mainBlock img.borderTL, .nautilus.vaisseaux div.voyage.active div.sem div.mainBlock img.borderBL, .nautilus.vaisseaux div.voyage.active div.sem div.mainBlock img.borderTR, .nautilus.vaisseaux div.voyage.active div.sem div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.vaisseaux div.voyage.active div.sem div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.vaisseaux div.voyage.active div.sem div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.vaisseaux div.voyage.active div.sem div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.vaisseaux div.voyage.active div.sem div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.vaisseaux div.voyage.active div.sem div.mainBlock div.semaines {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-image: URL("../assets/semaines.png");
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+}
+.nautilus.vaisseaux div.voyage.active div.sem div.mainBlock div.semaines span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+.nautilus.vaisseaux div.voyage.active div.quarts, .nautilus.vaisseaux div.voyage.active div.lieux, .nautilus.vaisseaux div.voyage.active div.creatures {
+  text-align: center;
+}
+.nautilus.vaisseaux div.voyage.active div.quarts div.mainBlock, .nautilus.vaisseaux div.voyage.active div.lieux div.mainBlock, .nautilus.vaisseaux div.voyage.active div.creatures div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  margin-top: -30px;
+  padding-top: 30px;
+}
+.nautilus.vaisseaux div.voyage.active div.quarts div.mainBlock img.borderTL, .nautilus.vaisseaux div.voyage.active div.quarts div.mainBlock img.borderBL, .nautilus.vaisseaux div.voyage.active div.quarts div.mainBlock img.borderTR, .nautilus.vaisseaux div.voyage.active div.quarts div.mainBlock img.borderBR, .nautilus.vaisseaux div.voyage.active div.lieux div.mainBlock img.borderTL, .nautilus.vaisseaux div.voyage.active div.lieux div.mainBlock img.borderBL, .nautilus.vaisseaux div.voyage.active div.lieux div.mainBlock img.borderTR, .nautilus.vaisseaux div.voyage.active div.lieux div.mainBlock img.borderBR, .nautilus.vaisseaux div.voyage.active div.creatures div.mainBlock img.borderTL, .nautilus.vaisseaux div.voyage.active div.creatures div.mainBlock img.borderBL, .nautilus.vaisseaux div.voyage.active div.creatures div.mainBlock img.borderTR, .nautilus.vaisseaux div.voyage.active div.creatures div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.vaisseaux div.voyage.active div.quarts div.mainBlock img.borderTL, .nautilus.vaisseaux div.voyage.active div.lieux div.mainBlock img.borderTL, .nautilus.vaisseaux div.voyage.active div.creatures div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.vaisseaux div.voyage.active div.quarts div.mainBlock img.borderBL, .nautilus.vaisseaux div.voyage.active div.lieux div.mainBlock img.borderBL, .nautilus.vaisseaux div.voyage.active div.creatures div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.vaisseaux div.voyage.active div.quarts div.mainBlock img.borderTR, .nautilus.vaisseaux div.voyage.active div.lieux div.mainBlock img.borderTR, .nautilus.vaisseaux div.voyage.active div.creatures div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.vaisseaux div.voyage.active div.quarts div.mainBlock img.borderBR, .nautilus.vaisseaux div.voyage.active div.lieux div.mainBlock img.borderBR, .nautilus.vaisseaux div.voyage.active div.creatures div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.vaisseaux div.voyage.active div.quarts div.editor, .nautilus.vaisseaux div.voyage.active div.lieux div.editor, .nautilus.vaisseaux div.voyage.active div.creatures div.editor {
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: left;
+  background: white;
+}
+.nautilus.vaisseaux div.voyage.active div.quarts div.editor.tinymce, .nautilus.vaisseaux div.voyage.active div.lieux div.editor.tinymce, .nautilus.vaisseaux div.voyage.active div.creatures div.editor.tinymce {
+  min-height: 200px;
+  padding: 0px;
+}
+.nautilus.vaisseaux div.voyage.active div.quarts div.editor div.tox-sidebar-wrap, .nautilus.vaisseaux div.voyage.active div.lieux div.editor div.tox-sidebar-wrap, .nautilus.vaisseaux div.voyage.active div.creatures div.editor div.tox-sidebar-wrap {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.nautilus.vaisseaux div.voyage.active div.quarts div.editor p, .nautilus.vaisseaux div.voyage.active div.lieux div.editor p, .nautilus.vaisseaux div.voyage.active div.creatures div.editor p {
+  letter-spacing: 1px;
+}
+.nautilus.vaisseaux div.description.active {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+.nautilus.vaisseaux div.description.active div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+.nautilus.vaisseaux div.description.active div.mainBlock img.borderTL, .nautilus.vaisseaux div.description.active div.mainBlock img.borderBL, .nautilus.vaisseaux div.description.active div.mainBlock img.borderTR, .nautilus.vaisseaux div.description.active div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.nautilus.vaisseaux div.description.active div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.nautilus.vaisseaux div.description.active div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.nautilus.vaisseaux div.description.active div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.nautilus.vaisseaux div.description.active div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.nautilus.vaisseaux div.description.active div.editor {
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: left;
+  background: white;
+}
+.nautilus.vaisseaux div.description.active div.editor.tinymce {
+  min-height: 200px;
+  padding: 0px;
+}
+.nautilus.vaisseaux div.description.active div.editor div.tox-sidebar-wrap {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.nautilus.vaisseaux div.description.active div.editor p {
+  letter-spacing: 1px;
+}
+.nautilus.vaisseaux div.options.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5px;
+}
+.nautilus.vaisseaux div.options.active button {
+  border: thick double RGB(151, 112, 77);
+  background: white;
+  border-radius: 30px;
+  font-size: 17px;
+  font-variant: small-caps;
+  font-weight: bold;
+  padding: 5px 10px;
+  line-height: 15px;
+}
+.nautilus.vaisseaux div.options.active button.clicked {
+  text-shadow: none;
+  background: URL("../assets/fondH.png");
+}
+.nautilus.vaisseaux div.pression {
+  width: 250px;
+  background: RGB(152, 188, 83);
+  text-align: center;
+  font-weight: bold;
+  font-variant: small-caps;
+  line-height: 30px;
+  border: 1px solid black;
+  margin-top: -36px;
+  position: relative;
+  z-index: 999;
+}
+.nautilus.vaisseaux div.pression.p0 {
+  background: RGB(182, 161, 131);
+}
+.nautilus.vaisseaux div.pression.p5 {
+  background: RGB(152, 188, 83);
+}
+.nautilus.vaisseaux div.pression.p6 {
+  background: RGB(231, 220, 92);
+}
+.nautilus.vaisseaux div.pression.p7 {
+  background: RGB(242, 177, 93);
+}
+.nautilus.vaisseaux div.pression.p8 {
+  background: RGB(227, 61, 70);
+}
+.nautilus.vaisseaux div.pression.p11 {
+  background: RGB(141, 76, 133);
+}
+.nautilus.vaisseaux div.difficulte {
+  width: max-content;
+  background: URL("../assets/fondH.png");
+  display: grid;
+  grid-gap: 5px;
+  grid-auto-columns: 1fr 1fr;
+  text-align: left;
+  font-weight: bold;
+  font-variant: small-caps;
+  line-height: 30px;
+  border: 1px solid black;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-top: -36px;
+  position: relative;
+  z-index: 999 span;
+  z-index-display: inline-block;
+  z-index-grid-column: 1;
+  z-index-width: 100%;
+  z-index-white-space: nowrap;
+}
+.nautilus.vaisseaux div.difficulte input {
+  grid-column: 2;
+  width: 100%;
+  text-align: center;
+  border-radius: 0px;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: RGB(117, 76, 40);
+  background: transparent;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 1px;
+}
+
+.wpn {
+  font-family: "Segoe Ui", Arial;
+}
+.wpn section.window-content {
+  background: URL("../assets/fond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wpn header.sheet-header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-gap: 5px;
+}
+.wpn header.sheet-header > img {
+  width: 100%;
+  height: 100%;
+  grid-column: 1;
+  grid-row: 1/3;
+  object-fit: contain;
+  background: white;
+}
+.wpn header.sheet-header h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  grid-column: 2;
+  grid-row: 1;
+}
+.wpn header.sheet-header h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.wpn header.sheet-header h1 input {
+  width: 100%;
+  margin: 0px;
+  padding: 10px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+}
+.wpn header.sheet-header div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: -35px;
+  padding-top: 30px;
+  margin-bottom: auto;
+}
+.wpn header.sheet-header div.mainBlock img.borderTL, .wpn header.sheet-header div.mainBlock img.borderBL, .wpn header.sheet-header div.mainBlock img.borderTR, .wpn header.sheet-header div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.wpn header.sheet-header div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.wpn header.sheet-header div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.wpn header.sheet-header div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.wpn header.sheet-header div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.wpn header.sheet-header div.mainBlock > div {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 75px 1fr;
+}
+.wpn header.sheet-header div.mainBlock > div span.label {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+}
+.wpn header.sheet-header div.mainBlock > div input {
+  width: 100%;
+  min-width: 0px;
+  text-align: center;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0px;
+  background: transparent;
+}
+.wpn header.sheet-header div.mainBlock > div div.editor {
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.wpn header.sheet-header div.mainBlock > div div.editor.tinymce {
+  min-height: 200px;
+  padding: 0px;
+}
+.wpn header.sheet-header div.mainBlock > div div.editor div.tox-sidebar-wrap {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.wpn header.sheet-header div.mainBlock > div div.editor p {
+  letter-spacing: 1px;
+}
+
+.equipement {
+  font-family: "Segoe Ui", Arial;
+}
+.equipement section.window-content {
+  background: URL("../assets/fond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.equipement header.sheet-header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-gap: 5px;
+}
+.equipement header.sheet-header > img {
+  width: 100%;
+  height: 100%;
+  grid-column: 1;
+  grid-row: 1/3;
+  object-fit: contain;
+  background: white;
+}
+.equipement header.sheet-header h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  grid-column: 2;
+  grid-row: 1;
+}
+.equipement header.sheet-header h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.equipement header.sheet-header h1 input {
+  width: 100%;
+  margin: 0px;
+  padding: 10px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+}
+.equipement header.sheet-header div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: -35px;
+  padding-top: 30px;
+  margin-bottom: auto;
+}
+.equipement header.sheet-header div.mainBlock img.borderTL, .equipement header.sheet-header div.mainBlock img.borderBL, .equipement header.sheet-header div.mainBlock img.borderTR, .equipement header.sheet-header div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.equipement header.sheet-header div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.equipement header.sheet-header div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.equipement header.sheet-header div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.equipement header.sheet-header div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.equipement header.sheet-header div.mainBlock > div {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr;
+}
+.equipement header.sheet-header div.mainBlock > div span.label {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+}
+.equipement header.sheet-header div.mainBlock > div div.editor {
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.equipement header.sheet-header div.mainBlock > div div.editor.tinymce {
+  min-height: 200px;
+  padding: 0px;
+}
+.equipement header.sheet-header div.mainBlock > div div.editor div.tox-sidebar-wrap {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.equipement header.sheet-header div.mainBlock > div div.editor p {
+  letter-spacing: 1px;
+}
+
+.amelioration {
+  font-family: "Segoe Ui", Arial;
+}
+.amelioration section.window-content {
+  background: URL("../assets/fond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.amelioration header.sheet-header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-gap: 5px;
+}
+.amelioration header.sheet-header > img {
+  width: 100%;
+  height: 100%;
+  grid-column: 1;
+  grid-row: 1/3;
+  object-fit: contain;
+  background: white;
+}
+.amelioration header.sheet-header h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  grid-column: 2;
+  grid-row: 1;
+}
+.amelioration header.sheet-header h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.amelioration header.sheet-header h1 input {
+  width: 100%;
+  margin: 0px;
+  padding: 10px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+}
+.amelioration header.sheet-header div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: -35px;
+  padding-top: 30px;
+  margin-bottom: auto;
+  height: calc(100% + 35px);
+}
+.amelioration header.sheet-header div.mainBlock img.borderTL, .amelioration header.sheet-header div.mainBlock img.borderBL, .amelioration header.sheet-header div.mainBlock img.borderTR, .amelioration header.sheet-header div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.amelioration header.sheet-header div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.amelioration header.sheet-header div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.amelioration header.sheet-header div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.amelioration header.sheet-header div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.amelioration header.sheet-header div.mainBlock div.editor {
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.amelioration header.sheet-header div.mainBlock div.editor.tinymce {
+  min-height: 200px;
+  padding: 0px;
+}
+.amelioration header.sheet-header div.mainBlock div.editor div.tox-sidebar-wrap {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.amelioration header.sheet-header div.mainBlock div.editor p {
+  letter-spacing: 1px;
+}
+.amelioration section.sheet-body {
+  display: grid;
+  margin-top: 5px;
+  align-items: flex-start;
+}
+.amelioration section.sheet-body div.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+.amelioration section.sheet-body div.menu button {
+  border: thick double RGB(151, 112, 77);
+  background: white;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  font-variant: small-caps;
+  line-height: 20px;
+}
+.amelioration section.sheet-body div.menu button.active {
+  text-shadow: none;
+  background: URL("../assets/fondH.png");
+}
+.amelioration section.sheet-body div.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  margin-top: 5px;
+}
+.amelioration section.sheet-body div.bonus {
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-gap: 5px;
+}
+.amelioration section.sheet-body div.bonus h2 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  grid-column: 1;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0px 0px;
+  text-align: center;
+  border: 0px;
+  font-weight: bold;
+  text-transform: inherit;
+  font-size: 18px;
+  font-variant: small-caps;
+  line-height: 36px;
+}
+.amelioration section.sheet-body div.bonus h2 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.amelioration section.sheet-body div.bonus div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondV.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  margin-top: -35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: auto;
+  height: calc(100% + 35px);
+  grid-row: 2;
+  grid-gap: 5px;
+}
+.amelioration section.sheet-body div.bonus div.mainBlock img.borderTL, .amelioration section.sheet-body div.bonus div.mainBlock img.borderBL, .amelioration section.sheet-body div.bonus div.mainBlock img.borderTR, .amelioration section.sheet-body div.bonus div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.amelioration section.sheet-body div.bonus div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.amelioration section.sheet-body div.bonus div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.amelioration section.sheet-body div.bonus div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.amelioration section.sheet-body div.bonus div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.amelioration section.sheet-body div.bonus div.mainBlock > div {
+  display: grid;
+}
+.amelioration section.sheet-body div.bonus div.mainBlock > div.num {
+  grid-template-columns: 1fr 60px;
+}
+.amelioration section.sheet-body div.bonus div.mainBlock > div.num label {
+  grid-column: 2;
+  background: URL("../assets/compteur.png");
+  background-size: 56px 26px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: 999;
+}
+.amelioration section.sheet-body div.bonus div.mainBlock > div.num label input {
+  width: 100%;
+  text-align: center;
+  border: 0px;
+  background: transparent;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.amelioration section.sheet-body div.bonus div.mainBlock > div.select {
+  grid-template-columns: 1fr 1fr;
+}
+.amelioration section.sheet-body div.bonus div.mainBlock > div.select select {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  background: transparent;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  z-index: 999;
+}
+.amelioration section.sheet-body div.bonus div.mainBlock > div span {
+  grid-column: 1;
+  font-variant: small-caps;
+  font-weight: bold;
+  line-height: 30px;
+}
+.amelioration section.sheet-body div.hide {
+  display: none !important;
+}
+
+.avarie {
+  font-family: "Segoe Ui", Arial;
+}
+.avarie section.window-content {
+  background: URL("../assets/fond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.avarie header.sheet-header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-gap: 5px;
+}
+.avarie header.sheet-header > img {
+  width: 100%;
+  height: 100%;
+  grid-column: 1;
+  grid-row: 1/3;
+  object-fit: contain;
+  background: white;
+}
+.avarie header.sheet-header h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  grid-column: 2;
+  grid-row: 1;
+}
+.avarie header.sheet-header h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.avarie header.sheet-header h1 input {
+  width: 100%;
+  margin: 0px;
+  padding: 10px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+}
+.avarie header.sheet-header div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: -35px;
+  padding-top: 30px;
+  margin-bottom: auto;
+  height: calc(100% + 35px);
+}
+.avarie header.sheet-header div.mainBlock img.borderTL, .avarie header.sheet-header div.mainBlock img.borderBL, .avarie header.sheet-header div.mainBlock img.borderTR, .avarie header.sheet-header div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.avarie header.sheet-header div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.avarie header.sheet-header div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.avarie header.sheet-header div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.avarie header.sheet-header div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.avarie header.sheet-header div.mainBlock div.editor {
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.avarie header.sheet-header div.mainBlock div.editor.tinymce {
+  min-height: 200px;
+  padding: 0px;
+}
+.avarie header.sheet-header div.mainBlock div.editor div.tox-sidebar-wrap {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.avarie header.sheet-header div.mainBlock div.editor p {
+  letter-spacing: 1px;
+}
+
+.item.armement {
+  font-family: "Segoe Ui", Arial;
+}
+.item.armement section.window-content {
+  background: URL("../assets/fond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item.armement header.sheet-header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-gap: 5px;
+}
+.item.armement header.sheet-header > img {
+  width: 100%;
+  height: 100%;
+  grid-column: 1;
+  grid-row: 1/3;
+  object-fit: contain;
+  background: white;
+}
+.item.armement header.sheet-header h1 {
+  background: URL("../assets/titre.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 380px;
+  margin: auto;
+  font-weight: normal;
+  z-index: 99;
+  grid-column: 2;
+  grid-row: 1;
+  grid-column: 2;
+  grid-row: 1;
+}
+.item.armement header.sheet-header h1 input {
+  border: 0px;
+  text-transform: inherit;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.item.armement header.sheet-header h1 input {
+  width: 100%;
+  margin: 0px;
+  padding: 10px 0px 0px;
+  text-align: center;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: transparent;
+  font-weight: bold;
+}
+.item.armement header.sheet-header div.mainBlock {
+  position: relative;
+  background: URL("../assets/fondH.png"), radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: -35px;
+  padding-top: 30px;
+  margin-bottom: auto;
+  height: calc(100% + 35px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 30px;
+  grid-gap: 5px;
+}
+.item.armement header.sheet-header div.mainBlock img.borderTL, .item.armement header.sheet-header div.mainBlock img.borderBL, .item.armement header.sheet-header div.mainBlock img.borderTR, .item.armement header.sheet-header div.mainBlock img.borderBR {
+  position: absolute;
+  width: 64px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.item.armement header.sheet-header div.mainBlock img.borderTL {
+  left: -4px;
+  top: -4px;
+}
+.item.armement header.sheet-header div.mainBlock img.borderBL {
+  left: -4px;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+.item.armement header.sheet-header div.mainBlock img.borderTR {
+  right: -4px;
+  top: -4px;
+  transform: scaleX(-1);
+}
+.item.armement header.sheet-header div.mainBlock img.borderBR {
+  right: -4px;
+  bottom: -4px;
+  transform: scaleX(-1) scaleY(-1);
+}
+.item.armement header.sheet-header div.mainBlock div.editor {
+  min-height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  grid-column: 1/3;
+}
+.item.armement header.sheet-header div.mainBlock div.editor.tinymce {
+  min-height: 200px;
+  padding: 0px;
+}
+.item.armement header.sheet-header div.mainBlock div.editor div.tox-sidebar-wrap {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.item.armement header.sheet-header div.mainBlock div.editor p {
+  letter-spacing: 1px;
+}
+.item.armement header.sheet-header div.mainBlock div.num {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  margin-top: 5px;
+}
+.item.armement header.sheet-header div.mainBlock div.num span {
+  grid-column: 1;
+  font-variant: small-caps;
+  font-weight: bold;
+  line-height: 30px;
+}
+.item.armement header.sheet-header div.mainBlock div.num label {
+  grid-column: 2;
+  background: URL("../assets/compteur.png");
+  background-size: 56px 26px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: 999;
+}
+.item.armement header.sheet-header div.mainBlock div.num label input {
+  width: 100%;
+  text-align: center;
+  border: 0px;
+  background: transparent;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+div.nautilus div.editor {
+  display: grid;
+}
+div.nautilus .tox-tinymce {
+  height: 100% !important;
+}
+div.nautilus.gmTool select {
+  width: 100%;
+  text-align: center;
+  font-variant: small-caps;
+}
+div.nautilus.gmTool select.p0 {
+  background: RGB(182, 161, 131);
+}
+div.nautilus.gmTool select.p5 {
+  background: RGB(152, 188, 83);
+}
+div.nautilus.gmTool select.p6 {
+  background: RGB(231, 220, 92);
+}
+div.nautilus.gmTool select.p7 {
+  background: RGB(242, 177, 93);
+}
+div.nautilus.gmTool select.p8 {
+  background: RGB(227, 61, 70);
+}
+div.nautilus.gmTool select.p11 {
+  background: RGB(141, 76, 133);
+}
+div.nautilus.gmTool div {
+  width: 100%;
+  position: relative;
+  line-height: 25px;
+}
+div.nautilus.gmTool div span {
+  display: block;
+  width: 100%;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-align: center;
+}
+div.nautilus.gmTool div i {
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  top: 5px;
+}
+div.nautilus.gmTool div i:hover {
+  text-shadow: 0 0 8px var(--color-shadow-primary);
+}
+div.nautilus-roll {
+  cursor: pointer;
+}
+div.nautilus-roll div.specialites {
+  margin-top: 5px;
+}
+div.nautilus-roll div.specialites h4 {
+  text-align: center;
+  width: 100%;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+div.nautilus-roll div.resultat {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+div.nautilus-roll div.dmg, div.nautilus-roll div.sante {
+  text-align: left;
+  padding-left: 5px;
+  flex: 1;
+  word-break: break-all;
+  align-self: center;
+}
+div.nautilus-roll div.dmg span:first-of-type, div.nautilus-roll div.sante span:first-of-type {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+div.nautilus-roll div.vm {
+  text-align: center;
+  padding-left: 5px;
+  flex: 1;
+  word-break: break-all;
+  align-self: center;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin-top: 5px;
+}
+div.nautilus-roll div.line {
+  display: flex;
+  justify-content: space-between;
+}
+div.nautilus-roll div.line div:first-of-type {
+  margin-right: 2.5px;
+}
+div.nautilus-roll div.line div:last-of-type {
+  margin-left: 2.5px;
+}
+div.nautilus-roll div.description {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: justify;
+  word-break: break-all;
+  line-height: 18px;
+  font-size: 13px;
+}
+div.nautilus-msg h4.pression {
+  width: 100%;
+  text-align: center;
+  font-variant: small-caps;
+}
+div.nautilus-msg h4.pression.p0 {
+  background: RGB(182, 161, 131);
+}
+div.nautilus-msg h4.pression.p5 {
+  background: RGB(152, 188, 83);
+}
+div.nautilus-msg h4.pression.p6 {
+  background: RGB(231, 220, 92);
+}
+div.nautilus-msg h4.pression.p7 {
+  background: RGB(242, 177, 93);
+}
+div.nautilus-msg h4.pression.p8 {
+  background: RGB(227, 61, 70);
+}
+div.nautilus-msg h4.pression.p11 {
+  background: RGB(141, 76, 133);
+}
+div.nautilus-roll-ask label.mod {
+  display: flex;
+  width: max-content;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+div.nautilus-roll-ask label.mod span {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 16px;
+}
+div.nautilus-roll-ask label.mod input {
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  width: 50px;
+  text-align: center;
+  background: transparent;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+div.nautilus-roll-ask label.spe {
+  display: inline-block;
+  width: 50%;
+  font-variant: small-caps;
+  cursor: pointer;
+}
+div.nautilus-roll-ask label.spe span {
+  margin-right: auto;
+  margin-left: 10px;
+  font-size: 14px;
+}
+div.nautilus-roll-ask label.spe:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+div.nautilus-roll-ask label.spe:hover {
+  font-weight: bold;
+}
+div.nautilus-roll-ask h1 {
+  font-size: 20px;
+  margin-top: 15px;
+  border-color: black;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+div.nautilus-roll-ask select {
+  width: 100%;
+  border-radius: 0px;
+  text-align: center;
+  font-variant: small-caps;
+}
+div.nautilus-roll-ask div.dialog-buttons {
+  display: flex;
+}
+div.nautilus-roll-nautilus-ask div.nautilus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+}
+div.nautilus-roll-nautilus-ask div.blockSpe {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+div.nautilus-roll-nautilus-ask div.blockSpe h1 {
+  grid-column: 1/3;
+}
+div.nautilus-roll-nautilus-ask div.dialog-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+}
+div.nautilus-roll-nautilus-ask label.mod {
+  display: flex;
+  width: max-content;
+  justify-content: space-between;
+  align-items: flex-end;
+  grid-column: 1/3;
+}
+div.nautilus-roll-nautilus-ask label.mod span {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 16px;
+}
+div.nautilus-roll-nautilus-ask label.mod input {
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  width: 50px;
+  text-align: center;
+  background: transparent;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+div.nautilus-roll-nautilus-ask label.spe {
+  display: inline-block;
+  width: 100%;
+  font-variant: small-caps;
+  cursor: pointer;
+}
+div.nautilus-roll-nautilus-ask label.spe span {
+  margin-right: auto;
+  margin-left: 10px;
+  font-size: 14px;
+}
+div.nautilus-roll-nautilus-ask label.spe:hover {
+  font-weight: bold;
+}
+div.nautilus-roll-nautilus-ask h1 {
+  font-size: 20px;
+  margin-top: 15px;
+  border-color: black;
+  font-weight: bold;
+  font-variant: small-caps;
+  align-self: flex-end;
+  margin-bottom: 0px;
+}
+div.nautilus-roll-nautilus-ask select {
+  width: 100%;
+  border-radius: 0px;
+  text-align: center;
+  font-variant: small-caps;
+}
+div.nautilus-roll-nautilus-ask div.dialog-buttons {
+  display: flex;
+  margin-top: 5px;
+}
+div.nautilus-roll-nautilus-ask button {
+  margin: 0px;
+}
+
+li.chat-message {
+  background: URL("../assets/fondV.png");
+}

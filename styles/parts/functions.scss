@@ -1,0 +1,130 @@
+$white:white;
+$black:black;
+$titre:URL("../assets/titre.png");
+$fond:URL("../assets/fond.png");
+$fondH:URL("../assets/fondH.png");
+$fondV:URL("../assets/fondV.png");
+$compteur:URL("../assets/compteur.png");
+$vm:URL("../assets/morale.png");
+$border:RGB(117, 076, 040);
+$colorFond:RGB(151, 112, 077);
+
+$pressionGrey:RGB(182, 161, 131);
+$pressionGreen:RGB(152, 188, 083);
+$pressionYellow:RGB(231, 220, 092);
+$pressionOrange:RGB(242, 177, 093);
+$pressionRed:RGB(227, 061, 070);
+$pressionPurple:RGB(141, 076, 133);
+
+$vmc:blue;
+
+@mixin blockH {
+    position:relative;
+
+    background: $fondH, radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+
+    img {
+        &.borderTL,
+        &.borderBL,
+        &.borderTR,
+        &.borderBR {
+            position:absolute;
+            width:64px;
+            border:0px;
+            margin:0px;
+            padding:0px;
+        }
+
+        &.borderTL {
+            left: -4px;
+            top: -4px;
+        }
+
+        &.borderBL {
+            left: -4px;
+            bottom: -4px;
+            transform: scaleY(-1);
+        }
+
+        &.borderTR {
+            right: -4px;
+            top: -4px;
+            transform: scaleX(-1);
+        }
+
+        &.borderBR {
+            right: -4px;
+            bottom: -4px;
+            transform: scaleX(-1) scaleY(-1);
+        }
+    }
+
+}
+
+@mixin blockV {
+    position:relative;
+
+    background: $fondV, radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+
+    img {
+        &.borderTL,
+        &.borderBL,
+        &.borderTR,
+        &.borderBR {
+            position:absolute;
+            width:64px;
+            border:0px;
+            margin:0px;
+            padding:0px;
+        }
+
+        &.borderTL {
+            left: -4px;
+            top: -4px;
+        }
+
+        &.borderBL {
+            left: -4px;
+            bottom: -4px;
+            transform: scaleY(-1);
+        }
+
+        &.borderTR {
+            right: -4px;
+            top: -4px;
+            transform: scaleX(-1);
+        }
+
+        &.borderBR {
+            right: -4px;
+            bottom: -4px;
+            transform: scaleX(-1) scaleY(-1);
+        }
+    }
+}
+
+@mixin title {
+    background: $titre;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 380px;
+    margin: auto;
+    font-weight: normal;
+    z-index: 99;
+    grid-column: 2;
+    grid-row: 1;
+
+    input {
+        border:0px;
+        text-transform: inherit;
+        font-size:20px;
+        font-variant: small-caps;
+    }
+}

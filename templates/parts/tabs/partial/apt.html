@@ -1,0 +1,46 @@
+<div class="apt">
+    <h1>
+        <span>{{localize "NAUTILUS.PERSONNAGE.APTITUDES.Label"}}</span>
+    </h1>
+    <div class="mainBlock">
+        <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+        <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+        <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+        <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+        {{#each systemData.aptitudes as |key apt|}}
+        <div class="subBlock">
+            <div class="main">
+                <span data-aptitude="{{apt}}" class="roll_aptitude draggable"><i class="fa-solid fa-dice-d10"></i> {{translate apt 'aptitudes'}}</span>
+
+                <label>
+                    <input type="number" name="system.aptitudes.{{apt}}.value" min="0" value="{{key.value}}" />
+                </label>
+
+            </div>
+            {{#unless @root/systemData/options/isnautilus}}
+            <div class="add addSpecialite" data-apt="{{apt}}">
+                + {{localize "NAUTILUS.PERSONNAGE.APTITUDES.Specialites"}}
+            </div>
+            {{/unless}}
+            <div class="sub">
+            {{#each key.specialites as |ks spe|}}
+                <div>
+                    {{#unless @root/systemData/options/isnautilus}}
+                    <i class="fa-solid fa-dice-d10 roll_specialite" data-aptitude="{{apt}}" data-spe="{{spe}}"></i>
+                    <i class="fa-duotone fa-trash deleteSpecialite" data-apt="{{apt}}" data-spe="{{spe}}"></i>
+                    <input type="text" name="system.aptitudes.{{apt}}.specialites.{{spe}}.name" value="{{ks.name}}" />
+                    {{else}}
+                    <span class="spenautilus roll_specialite draggable" data-aptitude="{{apt}}" data-spe="{{spe}}"><i class="fa-solid fa-dice-d10"></i> {{{ks.name}}}</span>
+                    {{/unless}}
+                    <label>
+                        <input type="number" name="system.aptitudes.{{apt}}.specialites.{{spe}}.value" value="{{ks.value}}" min="0" />
+                        <span>{{localize "NAUTILUS.PERSONNAGE.APTITUDES.Relance-short"}}</span>
+                    </label>
+                </div>
+            {{/each}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="dice-roll nautilus-roll">
+    <div class="dice-result">
+        <div class="dice-formula">
+            {{{flavor}}}
+        </div>
+        {{#if main.empty}}
+            <h4 class="dice-total">{{{main.text}}}</h4>
+        {{else}}
+            {{#if main.vm}}
+            <div class="dice-formula vm">
+                {{main.vm}}
+            </div>
+            {{/if}}
+            {{{main.tooltip}}}
+            <h4 class="dice-total">
+                {{main.total}} {{labelR main.total}}
+            </h4>
+            <div class="dice-formula resultat">{{main.result}}</div>
+            {{#if main.specialites}}
+            <div class="dice-formula specialites">
+                <h4>{{localize "NAUTILUS.PERSONNAGE.APTITUDES.Specialites"}}</h4>
+                {{main.specialites}}
+            </div>
+            {{/if}}
+
+            <div class="line">
+                <div class="dice-formula sante">
+                    {{#if main.nautilus}}
+                    <span>{{{main.tSante}}} : </span>
+                    <span>{{{main.cSante}}}</span>
+                    {{else}}
+                    <span>{{localize "NAUTILUS.PERSONNAGE.SANTE.Label"}} : </span>
+                    <span>{{{main.sante}}}</span>
+                    {{/if}}
+                </div>
+
+                {{#if main.wpn}}
+                <div class="dice-formula dmg">
+                    <span>{{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.Degats"}} : </span>
+                    <span>{{main.degats}}</span>
+                </div>
+                {{/if}}
+            </div>
+
+            {{#if main.wpn}}
+                {{#if main.description}}
+                <div class="dice-formula description">
+                    {{{main.description}}}
+                </div>
+                {{/if}}
+            {{/if}}
+        {{/if}}
+    </div>
+</div>

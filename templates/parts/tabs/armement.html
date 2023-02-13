@@ -1,0 +1,28 @@
+<div class="tab armement" data-group="primary" data-tab="armement">
+    <div class="addArmement item-create" data-type="armement">
+        + {{localize "NAUTILUS.VAISSEAUX.ARMEMENT.Label"}}
+    </div>
+    {{#each actor.armement.list as |key armement|}}
+    <div class="mainBlock">
+        <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+        <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+        <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+        <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+        <div class="subBlock">
+            <header class="summary main js-toggler" data-item-id="{{key._id}}">
+                <span class="deploy"><i class="fa-solid fa-circle-plus"></i></span>
+                <span class="name roll_wpn draggable" data-aptitude="manoeuvre" data-wpn="{{key._id}}">{{key.name}} <i class="fa-solid fa-dice-d10"></i></span>
+                <div class="buttons">
+                    <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                    <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                </div>
+                <span class="degats"><b>{{localize "NAUTILUS.VAISSEAUX.ARMEMENT.Degats"}} : </b>{{key.system.degats}}</span>
+            </header>
+            <div class="sub" style="display:none;">
+                <span>{{{key.system.description}}}</span>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

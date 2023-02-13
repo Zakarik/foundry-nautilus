@@ -1,0 +1,45 @@
+<form class="mainFlex {{cssClass}}" autocomplete="off">
+    <h1 class="charname">
+        <input name="name" type="text" value="{{data.name}}" placeholder="{{localize "NAUTILUS.PERSONNAGE.Nom"}}" />
+    </h1>
+
+    <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}" />
+
+    {{#if systemData.options.isnautilus}}
+    <div class="pression p{{systemData.pression.value}}">
+        <span>{{localize "NAUTILUS.PRESSION.Label"}} : {{systemData.pression.label}}</span>
+    </div>
+    {{else}}
+    <div class="difficulte">
+        <span>Difficulté du jet :</span>
+        <input type="number" name="system.pression.value" value="{{systemData.pression.value}}" min="0" />
+    </div>
+    {{/if}}
+
+    <section class="sheet-body">
+         {{!-- Sheet Tab Navigation --}}
+        <nav class="sheet-tabs tabs" data-group="primary">
+            {{#unless systemData.options.isnautilus}}
+            <a class="item" data-tab="description">{{localize "NAUTILUS.VAISSEAUX.DESCRIPTION.Label"}}</a>
+            {{/unless}}
+            <a class="item" data-tab="aptsem">{{localize "NAUTILUS.VAISSEAUX.APTITUDES.Label"}}</a>
+            {{#if systemData.options.isnautilus}}
+            <a class="item" data-tab="equipage">{{localize "NAUTILUS.VAISSEAUX.EQUIPAGE.Label"}}</a>
+            {{/if}}
+            <a class="item" data-tab="armement">{{localize "NAUTILUS.VAISSEAUX.ARMEMENT.Label"}}</a>
+            {{#if systemData.options.isnautilus}}
+            <a class="item" data-tab="ameava">{{localize "NAUTILUS.VAISSEAUX.AMEAVA.Label"}}</a>
+            <a class="item" data-tab="voyage">{{localize "NAUTILUS.VAISSEAUX.VOYAGE.Label"}}</a>
+            {{/if}}
+            <a class="item" data-tab="options">{{localize "NAUTILUS.VAISSEAUX.OPTIONS.Label"}}</a>
+        </nav>
+
+        {{> systems/nautilus/templates/parts/tabs/description.html }}
+        {{> systems/nautilus/templates/parts/tabs/aptsan.html }}
+        {{> systems/nautilus/templates/parts/tabs/equipage.html }}
+        {{> systems/nautilus/templates/parts/tabs/armement.html }}
+        {{> systems/nautilus/templates/parts/tabs/ameava.html }}
+        {{> systems/nautilus/templates/parts/tabs/voyage.html }}
+        {{> systems/nautilus/templates/parts/tabs/options.html }}
+    </section>
+</form>

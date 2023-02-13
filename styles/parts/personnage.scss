@@ -1,0 +1,277 @@
+.nautilus.personnage {
+    font-family: "Segoe Ui", Arial;
+    min-width:850px;
+
+    section.window-content {
+        background:$fond;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+
+    header.sheet-header {
+        display:grid;
+        grid-template-columns:250px 1fr;
+        grid-gap:5px;
+        align-items: flex-start;
+
+        >img {
+            width:100%;
+            height:100%;
+
+            grid-column:1;
+            grid-row:1 / 3;
+            object-fit: contain;
+            background:$white;
+        }
+
+        h1 {
+            @include title;
+            grid-column:2;
+            grid-row:1;
+
+            input {
+                width: 100%;
+                margin: 0px;
+                padding: 10px 0px 0px;
+                text-align: center;
+                border-radius: 0px;
+                border-top: 0px;
+                border-left: 0px;
+                border-right: 0px;
+                background: transparent;
+                font-weight:bold;
+            }
+        }
+
+        div {
+            &.identite {
+                @include blockH;
+                display:grid;
+                grid-gap:5px;
+                grid-template-rows:auto;
+                grid-auto-columns: 1fr;
+                grid-column:2;
+                grid-row:2 / 4;
+
+                margin-top: -35px;
+                padding-top: 30px;
+
+                label {
+                    display:flex;
+                    width:100%;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center;
+
+                    &.autospan {
+                        span {
+                            font-weight:bold;
+                            letter-spacing: 1px;
+                            white-space: nowrap;
+                        }
+
+                        input {
+                            width:100%;
+                            border-radius:0px;
+                            border-width:0px 0px 2px 0px;
+                            border-style:solid;
+                            border-color:$border;
+                            background:transparent;
+                            margin:0px 0px 0px 5px;
+                            padding:0px;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                    &.textarea {
+                        flex-wrap: wrap;
+                        padding:0px;
+
+                        span {
+                            width:100%;
+                            font-weight:bold;
+                            letter-spacing: 1px;
+                            white-space: nowrap;
+                        }
+
+                        textarea {
+                            width:100%;
+                            border-radius:0px;
+                            background:$white;
+                            margin:0px;
+                            padding:0px;
+                            border:2px solid $border;
+                            font-family: inherit;
+                        }
+                    }
+                }
+            }
+
+            &.identiteOther {
+                @include blockH;
+                display:grid;
+                grid-gap:5px;
+                grid-template-rows:auto;
+                grid-auto-columns: 1fr;
+                grid-column:2;
+                margin-top: 30px;
+                grid-row: 1 / 4;
+                padding-top: 30px;
+                height: calc(100% - 30px);
+                align-items: flex-start;
+                align-content: flex-start;
+
+                label {
+                    display:flex;
+                    width:100%;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center;
+
+                    &.autospan {
+                        span {
+                            font-weight:bold;
+                            letter-spacing: 1px;
+                            white-space: nowrap;
+                        }
+
+                        input {
+                            width:100%;
+                            border-radius:0px;
+                            border-width:0px 0px 2px 0px;
+                            border-style:solid;
+                            border-color:$border;
+                            background:transparent;
+                            margin:0px 0px 0px 5px;
+                            padding:0px;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                    &.textarea {
+                        flex-wrap: wrap;
+                        padding:0px;
+
+                        span {
+                            width:100%;
+                            font-weight:bold;
+                            letter-spacing: 1px;
+                            white-space: nowrap;
+                        }
+
+                        textarea {
+                            width:100%;
+                            border-radius:0px;
+                            background:$white;
+                            margin:0px;
+                            padding:0px;
+                            border:2px solid $border;
+                            font-family: inherit;
+                        }
+                    }
+                }
+            }
+
+            &.pression {
+                background:$pressionGreen;
+                grid-column:1;
+                grid-row:3;
+
+                text-align: center;
+                font-weight: bold;
+                font-variant: small-caps;
+                line-height: 30px;
+                border:1px solid $black;
+
+                &.p0 {
+                    background:$pressionGrey;
+                }
+
+                &.p5 {
+                    background:$pressionGreen;
+                }
+
+                &.p6 {
+                    background:$pressionYellow;
+                }
+
+                &.p7 {
+                    background:$pressionOrange;
+                }
+
+                &.p8 {
+                    background:$pressionRed;
+                }
+
+                &.p11 {
+                    background:$pressionPurple;
+                }
+            }
+
+            &.difficulte {
+                background:$white;
+                grid-column:1;
+                grid-row:3;
+
+                display:grid;
+                grid-gap:5px;
+                grid-auto-columns: 1fr 1fr;
+
+                text-align: left;
+                font-weight: bold;
+                font-variant: small-caps;
+                line-height: 30px;
+                border:1px solid $black;
+
+                padding-right:5px;
+                padding-left:5px;
+
+                span {
+                    display:inline-block;
+                    grid-column: 1;
+                    width:100%;
+                    white-space: nowrap;
+                }
+
+                input {
+                    grid-column: 2;
+                    width:100%;
+                    text-align: center;
+                    border-radius: 0px;
+                    border-width: 0px 0px 2px 0px;
+                    border-style: solid;
+                    border-color: RGB(117, 76, 40);
+                    background: transparent;
+                    margin: 0px;
+                    padding: 0px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+
+    nav.tabs {
+        border:none;
+
+        a {
+            border: thick double $colorFond;
+            background: $white;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 5px 10px;
+
+            &.active {
+                text-shadow:none;
+                background:$fondH;
+            }
+        }
+    }
+
+    div {
+        @import "tabs/aptitudes";
+        @import "tabs/vmsan";
+        @import "tabs/equipement";
+        @import "tabs/historique";
+    }
+}

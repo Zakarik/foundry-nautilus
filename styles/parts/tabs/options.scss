@@ -1,0 +1,21 @@
+&.options.active {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding:5px;
+
+    button {
+        border: thick double $colorFond;
+        background: $white;
+        border-radius: 30px;
+        font-size: 17px;
+        font-variant: small-caps;
+        font-weight: bold;
+        padding: 5px 10px;
+        line-height: 15px;
+
+        &.clicked {
+            text-shadow: none;
+            background: $fondH;
+        }
+    }
+}

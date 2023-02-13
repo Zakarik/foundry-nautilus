@@ -1,0 +1,91 @@
+<form class="mainFlex {{cssClass}}" autocomplete="off">
+    <header class="sheet-header flexrow">
+        <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}" />
+
+        <h1 class="charname">
+            <input name="name" type="text" value="{{data.name}}" placeholder="{{localize "NAUTILUS.PERSONNAGE.Nom"}}" />
+        </h1>
+
+        <div class="flexrow {{#if (isEqual data.type 'heritier')}}identite{{else}}identiteOther{{/if}}">
+            <img class="borderTL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBL" src="systems/nautilus/assets/coin.png" />
+            <img class="borderTR" src="systems/nautilus/assets/coin.png" />
+            <img class="borderBR" src="systems/nautilus/assets/coin.png" />
+
+            <label class="textarea">
+                <span>{{localize "NAUTILUS.PERSONNAGE.Concept"}} :</span>
+                <textarea name="system.concept">{{systemData.concept}}</textarea>
+            </label>
+            {{#if (isEqual data.type 'heritier')}}
+            <label class="textarea">
+                <span>{{localize "NAUTILUS.PERSONNAGE.Rupture"}} :</span>
+                <textarea name="system.rupture">{{systemData.rupture}}</textarea>
+            </label>
+
+            <label class="autospan">
+                <span>{{localize "NAUTILUS.PERSONNAGE.Occupation"}} :</span>
+                <input type="text" name="system.occupation" value="{{systemData.occupation}}" />
+            </label>
+            <label class="autospan">
+                <span>{{localize "NAUTILUS.PERSONNAGE.Heritage"}} :</span>
+                <input type="text" name="system.heritage" value="{{systemData.heritage}}" />
+            </label>
+            {{/if}}
+            {{#if (isEqual data.type 'heritier')}}
+            <label class="autospan">
+                <span>{{localize "NAUTILUS.PERSONNAGE.Role"}} :</span>
+                <input type="text" name="system.role" value="{{systemData.role}}" />
+            </label>
+            {{else}}
+                {{#if (isEqual data.type 'equipage')}}
+                <label class="autospan">
+                    <span>{{localize "NAUTILUS.PERSONNAGE.Role"}} :</span>
+                    <input type="text" name="system.role" value="{{systemData.role}}" />
+                </label>
+                {{/if}}
+            {{/if}}
+            {{#if (isEqual data.type 'heritier')}}
+            <label class="autospan">
+                <span>{{localize "NAUTILUS.PERSONNAGE.LienEquipage"}} :</span>
+                <input type="text" name="system.lienequipage" value="{{systemData.lienequipage}}" />
+            </label>
+            <label class="autospan">
+                <span>{{localize "NAUTILUS.PERSONNAGE.LienHeritier"}} :</span>
+                <input type="text" name="system.lienheritier" value="{{systemData.lienheritier}}" />
+            </label>
+            {{/if}}
+        </div>
+
+        {{#if (isEqual data.type 'heritier')}}
+        <div class="pression p{{systemData.pression.value}}">
+            <span>{{localize "NAUTILUS.PRESSION.Label"}} : {{systemData.pression.label}}</span>
+        </div>
+        {{else}}
+        <div class="difficulte">
+            <span>Difficulté du jet :</span>
+            <input type="number" name="system.pression.value" value="{{systemData.pression.value}}" min="0" />
+        </div>
+        {{/if}}
+    </header>
+
+    <section class="sheet-body">
+         {{!-- Sheet Tab Navigation --}}
+        <nav class="sheet-tabs tabs" data-group="primary">
+            <a class="item" data-tab="aptitudes">{{localize "NAUTILUS.PERSONNAGE.APTITUDES.Label"}}</a>
+            <a class="item" data-tab="vmsan">
+                {{#if (isEqual data.type 'heritier')}}
+                    {{localize "NAUTILUS.PERSONNAGE.VmSan"}}
+                {{else}}
+                    {{localize "NAUTILUS.PERSONNAGE.SANTE.Label"}}
+                {{/if}}
+            </a>
+            <a class="item" data-tab="equipement">{{localize "NAUTILUS.PERSONNAGE.EQUIPEMENT.Label"}}</a>
+            <a class="item" data-tab="historique">{{localize "NAUTILUS.PERSONNAGE.HISTORIQUE.Label"}}</a>
+        </nav>
+
+        {{> systems/nautilus/templates/parts/tabs/aptitudes.html }}
+        {{> systems/nautilus/templates/parts/tabs/vmsan.html }}
+        {{> systems/nautilus/templates/parts/tabs/equipements.html }}
+        {{> systems/nautilus/templates/parts/tabs/historique.html }}
+    </section>
+</form>
