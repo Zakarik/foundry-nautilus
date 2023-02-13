@@ -1,4 +1,4 @@
-![DonjonsEtChatons](https://user-images.githubusercontent.com/8583530/218448088-c6810788-82e4-4cee-b963-5dec08070e7c.PNG)
+![nautilus](https://user-images.githubusercontent.com/8583530/218454501-1c3f3779-4ada-451d-aa2c-28045ac049af.jpg)
 
 # Foundry system for Nautilus
 Nautilus is a french RPG.
