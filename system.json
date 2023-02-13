@@ -1,7 +1,7 @@
 {
   "id": "nautilus",
   "title": "Nautilus",
-  "description": "La fiche officielle de Nautilus, approuvée par Deadcrow.",
+  "description": "La fiche officielle de Nautilus, approuvée par Deadcrows.",
   "version": "1.0",
   "esmodules": [
     "module/nautilus.mjs"
