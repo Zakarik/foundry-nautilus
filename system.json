@@ -69,10 +69,10 @@
   ],
   "gridDistance": 5,
   "gridUnits": "m",
-  "url": "",
-  "manifest": "",
-  "download": "",
-  "readme": "",
-  "changelog": "",
-  "primaryTokenAttribute": "sante"
+  "primaryTokenAttribute": "sante",
+  "url": "https://github.com/Zakarik/foundry-nautilus",
+  "manifest": "https://raw.githubusercontent.com/Zakarik/foundry-nautilus/main/system.json",
+  "download": "https://github.com/Zakarik/foundry-nautilus/archive/refs/heads/main.zip",
+  "readme": "https://raw.githubusercontent.com/Zakarik/foundry-nautilus/main/README.md",
+  "changelog": "https://raw.githubusercontent.com/Zakarik/foundry-nautilus/main/Changelog.md"
 }
