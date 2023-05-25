@@ -29,60 +29,42 @@
     "minimum": "10",
     "verified": "10"
   },
-  "packs": [
+  "packs":[
     {
       "label": "Améliorations du Nautilus",
       "type": "Item",
       "name": "ameliorations-du-nautilus",
-      "path": "packs/ameliorations-du-nautilus.db",
-      "private": false,
-      "system": "nautilus",
-      "flags": {}
+      "path": "packs/ameliorations-du-nautilus.db"
     },
     {
       "label": "Armes à distance",
       "type": "Item",
       "name": "armes-a-distance",
-      "path": "packs/armes-a-distance.db",
-      "private": false,
-      "system": "nautilus",
-      "flags": {}
+      "path": "packs/armes-a-distance.db"
     },
     {
       "label": "Armes de mêlée",
       "type": "Item",
       "name": "armes-de-melee",
-      "path": "packs/armes-de-melee.db",
-      "private": false,
-      "system": "nautilus",
-      "flags": {}
+      "path": "packs/armes-de-melee.db"
     },
     {
       "label": "Créatures",
       "type": "Actor",
       "name": "creatures",
-      "path": "packs/creatures.db",
-      "private": false,
-      "system": "nautilus",
-      "flags": {}
+      "path": "packs/creatures.db"
     },
     {
       "label": "Équipage",
       "type": "Actor",
       "name": "equipage",
-      "path": "packs/equipage.db",
-      "private": false,
-      "system": "nautilus",
-      "flags": {}
+      "path": "packs/equipage.db"
     },
     {
       "label": "Vaisseaux",
       "type": "Actor",
       "name": "vaisseaux",
-      "path": "packs/vaisseaux.db",
-      "private": false,
-      "system": "nautilus",
-      "flags": {}
+      "path": "packs/vaisseaux.db"
     }
   ],
   "gridDistance": 5,
