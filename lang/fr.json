@@ -1,17 +1,19 @@
 {
-  "ACTOR":{
-    "TypeHeritier":"Héritier",
-    "TypeEquipage":"Équipage",
-    "TypePersonnage":"Personnage",
-    "TypeVaisseaux":"Vaisseaux"
-  },
-  "ITEM":{
-    "TypeDistance":"Arme à distance",
-    "TypeMelee":"Arme de mêlée",
-    "TypeEquipement":"Equipement",
-    "TypeAmelioration":"Amélioration du Nautilus",
-    "TypeAvarie":"Avarie du Nautilus",
-    "TypeArmement":"Armement de Vaisseaux"
+  "TYPES":{
+    "Actor":{
+      "heritier":"Héritier",
+      "equipage":"Équipage",
+      "personnage":"Personnage",
+      "vaisseaux":"Personnage"
+    },
+    "Item":{
+      "distance":"Arme à distance",
+      "melee":"Arme de mêlée",
+      "equipement":"Equipement",
+      "amelioration":"Amélioration du Nautilus",
+      "avarie":"Avarie du Nautilus",
+      "armement":"Armement de Vaisseaux"
+    }
   },
   "NAUTILUS":{
     "Actualiser":"Actualiser",

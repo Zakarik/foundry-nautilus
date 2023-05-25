@@ -2,7 +2,7 @@
   "id": "nautilus",
   "title": "Nautilus",
   "description": "La fiche officielle de Nautilus, approuvée par Deadcrows.",
-  "version": "1.0",
+  "version": "1.0.1",
   "esmodules": [
     "module/nautilus.mjs"
   ],
@@ -13,6 +13,12 @@
     {
       "lang": "fr",
       "name": "French",
+      "path": "lang/fr.json",
+      "flags": {}
+    },
+    {
+      "lang": "eng",
+      "name": "English",
       "path": "lang/fr.json",
       "flags": {}
     }
@@ -27,44 +33,62 @@
   ],
   "compatibility": {
     "minimum": "10",
-    "verified": "10"
+    "verified": "11"
   },
-  "packs":[
+  "packs": [
     {
       "label": "Améliorations du Nautilus",
       "type": "Item",
       "name": "ameliorations-du-nautilus",
-      "path": "packs/ameliorations-du-nautilus.db"
+      "path": "packs/ameliorations-du-nautilus.db",
+      "private": false,
+      "system": "nautilus",
+      "flags": {}
     },
     {
       "label": "Armes à distance",
       "type": "Item",
       "name": "armes-a-distance",
-      "path": "packs/armes-a-distance.db"
+      "path": "packs/armes-a-distance.db",
+      "private": false,
+      "system": "nautilus",
+      "flags": {}
     },
     {
       "label": "Armes de mêlée",
       "type": "Item",
       "name": "armes-de-melee",
-      "path": "packs/armes-de-melee.db"
+      "path": "packs/armes-de-melee.db",
+      "private": false,
+      "system": "nautilus",
+      "flags": {}
     },
     {
       "label": "Créatures",
       "type": "Actor",
       "name": "creatures",
-      "path": "packs/creatures.db"
+      "path": "packs/creatures.db",
+      "private": false,
+      "system": "nautilus",
+      "flags": {}
     },
     {
       "label": "Équipage",
       "type": "Actor",
       "name": "equipage",
-      "path": "packs/equipage.db"
+      "path": "packs/equipage.db",
+      "private": false,
+      "system": "nautilus",
+      "flags": {}
     },
     {
       "label": "Vaisseaux",
       "type": "Actor",
       "name": "vaisseaux",
-      "path": "packs/vaisseaux.db"
+      "path": "packs/vaisseaux.db",
+      "private": false,
+      "system": "nautilus",
+      "flags": {}
     }
   ],
   "gridDistance": 5,
@@ -72,7 +96,7 @@
   "primaryTokenAttribute": "sante",
   "url": "https://github.com/Zakarik/foundry-nautilus",
   "manifest": "https://raw.githubusercontent.com/Zakarik/foundry-nautilus/main/system.json",
-  "download": "https://github.com/Zakarik/foundry-nautilus/archive/refs/heads/main.zip",
+  "download": "https://github.com/Zakarik/foundry-nautilus/archive/1.0.1.zip",
   "readme": "https://raw.githubusercontent.com/Zakarik/foundry-nautilus/main/README.md",
   "changelog": "https://raw.githubusercontent.com/Zakarik/foundry-nautilus/main/Changelog.md"
 }
