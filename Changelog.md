@@ -1,3 +1,6 @@
+# Version 1.0.3
+Correction d'un problème de nom.
+
 # Version 1.0.2
 Correction d'un oubli dans la traduction.
 
