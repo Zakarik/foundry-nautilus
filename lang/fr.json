@@ -4,7 +4,7 @@
       "heritier":"Héritier",
       "equipage":"Équipage",
       "personnage":"Personnage",
-      "vaisseaux":"Personnage"
+      "vaisseaux":"Vaisseau"
     },
     "Item":{
       "distance":"Arme à distance",
@@ -106,6 +106,7 @@
       },
       "VALEURSMORALES":{
         "Label":"Valeurs morales",
+        "LabelCommune":"Valeur morale commune",
         "ShortUse":"Valeur utilisée",
         "Commune":"Commune",
         "CommuneUse":"Valeur commune utilisée",

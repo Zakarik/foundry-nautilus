@@ -2,7 +2,7 @@
   "id": "nautilus",
   "title": "Nautilus",
   "description": "La fiche officielle de Nautilus, approuvée par Deadcrows.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "esmodules": [
     "module/nautilus.mjs"
   ],
@@ -32,8 +32,8 @@
     }
   ],
   "compatibility": {
-    "minimum": "10",
-    "verified": "11"
+    "minimum": "11",
+    "verified": "12"
   },
   "packs": [
     {
@@ -96,7 +96,7 @@
   "primaryTokenAttribute": "sante",
   "url": "https://github.com/Zakarik/foundry-nautilus",
   "manifest": "https://raw.githubusercontent.com/Zakarik/foundry-nautilus/main/system.json",
-  "download": "https://github.com/Zakarik/foundry-nautilus/archive/1.0.3.zip",
+  "download": "https://github.com/Zakarik/foundry-nautilus/archive/1.0.4.zip",
   "readme": "https://raw.githubusercontent.com/Zakarik/foundry-nautilus/main/README.md",
   "changelog": "https://raw.githubusercontent.com/Zakarik/foundry-nautilus/main/Changelog.md"
 }

@@ -1,3 +1,7 @@
+# Version 1.0.4
+- Correction de quelques bugs de noms.
+- Vérification de la compatibilité avec la V12.
+
 # Version 1.0.3
 Correction d'un problème de nom.
 
