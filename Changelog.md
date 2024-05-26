@@ -1,3 +1,6 @@
+# Version 1.0.5
+- Correction de bugs d'affichages dans les fiches en version limitées.
+
 # Version 1.0.4
 - Correction de quelques bugs de noms.
 - Vérification de la compatibilité avec la V12.

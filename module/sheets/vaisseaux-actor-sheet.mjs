@@ -41,7 +41,7 @@ export class VaisseauxActorSheet extends ActorSheet {
      */
   get template() {
     if (!game.user.isGM && this.actor.limited) {
-      return "systems/donjons-et-chatons/templates/limited-sheet.html";
+      return "systems/nautilus/templates/vaisseaux-limited-sheet.html";
     }
     return this.options.template;
   }
