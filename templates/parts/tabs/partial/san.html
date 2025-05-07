@@ -31,11 +31,7 @@
                 <div class="textarea">
                     <textarea name="system.sante.list.{{san}}.notes">{{key.notes}}</textarea>
                     <select name="system.sante.list.{{san}}.malus" class="santemalus" data-key="{{san}}">
-                    {{#select key.malus}}
-                        <option value="false">{{localize "NAUTILUS.VAISSEAUX.SANTE.NotMalus"}}</option>
-                        <option value="1">{{localize "NAUTILUS.VAISSEAUX.SANTE.HasMalus"}}</option>
-                        <option value="2">{{localize "NAUTILUS.VAISSEAUX.SANTE.HasMalus2"}}</option>
-                    {{/select}}
+                        {{selectOptions (generateSelect 'malus') selected=key.malus localize=true}}
                     </select>
                 </div>
             {{/each}}

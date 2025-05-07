@@ -41,6 +41,8 @@ NAUTILUS.aptitudes = {
   'fanal':'NAUTILUS.VAISSEAUX.APTITUDES.Fanal'
 };
 
+NAUTILUS.aptitudesVaisseaux = ['manoeuvre', 'endurance', 'puissance', 'detection'];
+
 NAUTILUS.consequence = {
   's0':'NAUTILUS.PERSONNAGE.SANTE.CONSEQUENCES.Terrasse',
   's1':'NAUTILUS.PERSONNAGE.SANTE.CONSEQUENCES.EtatCritique',

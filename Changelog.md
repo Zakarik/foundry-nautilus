@@ -1,3 +1,6 @@
+# Version 1.1.0
+- Compatibilité avec la V13.
+
 # Version 1.0.5
 - Correction de bugs d'affichages dans les fiches en version limitées.
 

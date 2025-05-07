@@ -2,7 +2,7 @@
   "id": "nautilus",
   "title": "Nautilus",
   "description": "La fiche officielle de Nautilus, approuvée par Deadcrows.",
-  "version": "1.0.5",
+  "version": "#{VERSION}#",
   "esmodules": [
     "module/nautilus.mjs"
   ],
@@ -17,7 +17,7 @@
       "flags": {}
     },
     {
-      "lang": "eng",
+      "lang": "en",
       "name": "English",
       "path": "lang/fr.json",
       "flags": {}
@@ -32,8 +32,8 @@
     }
   ],
   "compatibility": {
-    "minimum": "11",
-    "verified": "12"
+    "minimum": "12",
+    "verified": "13"
   },
   "packs": [
     {
@@ -91,12 +91,30 @@
       "flags": {}
     }
   ],
-  "gridDistance": 5,
-  "gridUnits": "m",
+  "documentTypes": {
+    "Actor": {
+      "heritier": {},
+      "equipage":{},
+      "vaisseaux":{},
+      "personnage":{}
+    },
+    "Item":{
+      "distance":{},
+      "melee":{},
+      "equipement":{},
+      "amelioration":{},
+      "avarie":{},
+      "armement":{}
+    }
+  },
+  "grid":{
+    "distance":5,
+    "unit":"m"
+  },
   "primaryTokenAttribute": "sante",
-  "url": "https://github.com/Zakarik/foundry-nautilus",
-  "manifest": "https://raw.githubusercontent.com/Zakarik/foundry-nautilus/main/system.json",
-  "download": "https://github.com/Zakarik/foundry-nautilus/archive/1.0.5.zip",
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
   "readme": "https://raw.githubusercontent.com/Zakarik/foundry-nautilus/main/README.md",
   "changelog": "https://raw.githubusercontent.com/Zakarik/foundry-nautilus/main/Changelog.md"
 }

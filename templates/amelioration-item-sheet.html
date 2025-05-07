@@ -47,21 +47,13 @@
                     <div class="select" class="aptitude">
                         <span>{{localize "NAUTILUS.BONUS.ROLL.Aptitude"}}</span>
                         <select name="system.roll.aptitude" class="aptitude">
-                            {{#select systemData.roll.aptitude}}
-                                {{#each systemData.roll.list.aptitudes}}
-                                    <option value="{{this}}">{{translate this 'aptitudes'}}</option>
-                                {{/each}}
-                            {{/select}}
+                            {{selectOptions (generateSelect 'aptitudes' systemData.roll.list.aptitudes) selected=systemData.roll.aptitude localize=true}}
                         </select>
                     </div>
                     <div class="select">
                         <span>{{localize "NAUTILUS.BONUS.ROLL.Specialite"}}</span>
                         <select name="system.roll.specialite">
-                            {{#select systemData.roll.specialite}}
-                                {{#each systemData.roll.list.specialites}}
-                                    <option value="{{this}}">{{translate this 'aptitudes'}}</option>
-                                {{/each}}
-                            {{/select}}
+                            {{selectOptions (generateSelect 'specialites' systemData.roll.list.specialites) selected=systemData.roll.specialite localize=true}}
                         </select>
                     </div>
                 </div>

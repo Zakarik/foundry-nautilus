@@ -13,6 +13,18 @@ import { AmeliorationSheet } from "./sheets/amelioration-item-sheet.mjs";
 import { AvarieSheet } from "./sheets/avarie-item-sheet.mjs";
 import { ArmementSheet } from "./sheets/armement-item-sheet.mjs";
 
+// Import models classes.
+import { EquipageDataModel } from "./models/actors/equipage-data-model.mjs";
+import { HeritierDataModel } from "./models/actors/heritier-data-model.mjs";
+import { PersonnageDataModel } from "./models/actors/personnage-data-model.mjs";
+import { VaisseauxDataModel } from "./models/actors/vaisseaux-data-model.mjs";
+import { AmeliorationDataModel } from "./models/items/amelioration-data-model.mjs";
+import { ArmementDataModel } from "./models/items/armement-data-model.mjs";
+import { AvarieDataModel } from "./models/items/avarie-data-model.mjs";
+import { DistanceDataModel } from "./models/items/distance-data-model.mjs";
+import { EquipementDataModel } from "./models/items/equipement-data-model.mjs";
+import { MeleeDataModel } from "./models/items/melee-data-model.mjs";
+
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { NAUTILUS } from "./helpers/config.mjs";
@@ -66,6 +78,21 @@ Hooks.once('init', async function() {
   // Define custom Document classes
   CONFIG.Actor.documentClass = NautilusActor;
   CONFIG.Item.documentClass = NautilusItem;
+
+  CONFIG.Actor.dataModels = {
+    equipage:EquipageDataModel,
+    heritier:HeritierDataModel,
+    personnage:PersonnageDataModel,
+    vaisseaux:VaisseauxDataModel,
+  };
+  CONFIG.Item.dataModels = {
+    amelioration:AmeliorationDataModel,
+    armement:ArmementDataModel,
+    equipement:EquipementDataModel,
+    avarie:AvarieDataModel,
+    distance:DistanceDataModel,
+    melee:MeleeDataModel,
+  };
 
   // SETTINGS
   RegisterSettings();
@@ -142,6 +169,45 @@ Hooks.once('init', async function() {
     let result = false;
 
     if(actuel === key) result = true;
+    return result;
+  });
+
+  Handlebars.registerHelper('generateSelect', function(type, data=[]) {
+    let result = {};
+
+    switch(type) {
+      case 'vm':
+        result[''] = '';
+        result = foundry.utils.mergeObject(result, CONFIG.NAUTILUS.vm);
+        break;
+
+      case 'pression':
+        result = Object.fromEntries(
+          Object.entries(CONFIG.NAUTILUS.pression).map(([value, label]) => [
+              value,
+              `${game.i18n.localize('NAUTILUS.PRESSION.Label')} : ${game.i18n.localize(label)}`
+          ])
+      );
+        break;
+
+      case 'malus':
+        result = {
+          'false':"NAUTILUS.VAISSEAUX.SANTE.NotMalus",
+          '1':"NAUTILUS.VAISSEAUX.SANTE.HasMalus",
+          '2':"NAUTILUS.VAISSEAUX.SANTE.HasMalus2",
+        }
+        break;
+
+      case 'aptitudes':
+      case 'specialites':
+        result = data.reduce((acc, itm) => {
+          if(itm !== '') acc[itm] = game.i18n.localize(`NAUTILUS.VAISSEAUX.APTITUDES.${itm.charAt(0).toUpperCase() + itm.slice(1)}`);
+          else acc[itm] = '';
+          return acc;
+        }, {});
+        break;
+    }
+
     return result;
   });
 
